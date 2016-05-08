@@ -3,10 +3,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+  <!-- jsTileのサンプルで使ってたフォントをとりあえず入れてみた -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
   <?php wp_head(); ?>
-  <!-- ここからjsTileスクリプト（js, css）と、jquery.easing（本当はこれらはmanifest.jsonに書きたい）-->
-  <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/assets/scripts/jquery.easing.1.3.js"></script>
-  <link href="<?php echo get_template_directory_uri(); ?>/assets/styles/tl-style.css" rel="stylesheet" />
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/jstiles.js"></script>
-  <!-- ここまでjsTileスクリプト... -->
 </head>

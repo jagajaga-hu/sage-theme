@@ -493,7 +493,43 @@
 					// ratio: '0.72' 
 				// }
 			}
-		}		
+		},
+		tempD: {
+			tilesNum: 5,
+			columns: {
+				0: {
+					colClass: 'tl-col col-xs-12 col-sm-8 col-md-8',
+					start: '0',
+					end: '2'
+				},
+				1: {
+					colClass: 'tl-col col-xs-12 col-sm-4 col-md-4',
+					start: '3',
+					end: '4'
+				}
+			},
+			tiles: {
+				0: 'col-xs-12 col-sm-12 col-md-12',
+				1: 'xol-xs-12 col-sm-6 col-md-6',
+				2: 'xol-xs-12 col-sm-6 col-md-6',
+				3: 'col-xs-12 col-sm-12 col-md-12',
+				4: 'xol-xs-12 col-sm-12 col-md-12'
+			},
+			animations: {
+				0: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+				1: { tlClass:'tl-slide-left', tlClassF:'tl-slide-left-in', tlDelay:700},
+				2: { tlClass:'tl-slide-left', tlClassF:'tl-slide-left-in', tlDelay:200},
+				3: { tlClass:'tl-slide-right', tlClassF:'tl-slide-right-in', tlDelay:250},
+				4: { tlClass:'tl-slide-right', tlClassF:'tl-slide-right-in', tlDelay:500}
+			},
+			config: {
+				0: { ratio: '0.8'},
+				1: { ratio: '0.81'},
+				2: { ratio: '0.81'},
+				3: { ratio: '1.22'},
+				4: { ratio: '1.22'}
+			}
+		}
 	}
 		
 })(jQuery, window, document);
