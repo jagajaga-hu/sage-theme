@@ -189,7 +189,7 @@ h1,h2,h3,h4,h5,h6 { font-weight:100 }
 	transition:all 350ms ease-out;
 }
 .tl-tiles-container:not(.live-tiles) .tl-tile:hover {
-	transform: scale(1.03)!important;
+	transform: scale(1.04)!important;
 	z-index:999;
 }
 .tl-tile-content {
