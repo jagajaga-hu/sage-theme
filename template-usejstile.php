@@ -81,8 +81,8 @@
 				<a href="<?php the_permalink() ?>">»続きを読む</a>
 			  <?php endwhile; ?>
 			<?php endif; ?>
-		</div><!--/*
-		<div>
+		</div>
+		<div><!-- 5 -->
 			<?php query_posts('showposts=1&offset=5'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -95,7 +95,7 @@
 			  <?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-		<div>
+		<div><!-- 6 -->
 			<?php query_posts('showposts=1&offset=6'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -108,7 +108,8 @@
 			  <?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-		<div>
+		<div><!-- 7 -->
+			記事８
 			<?php query_posts('showposts=1&offset=7'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -121,7 +122,8 @@
 			  <?php endwhile; ?>
 			<?php endif; ?>
 			</div>
-		<div>
+		<div><!-- 8 -->
+			記事９
 			<?php query_posts('showposts=1&offset=8'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -134,7 +136,8 @@
 			  <?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-		<div>
+		<div><!-- 9 -->
+			記事１０
 			<?php query_posts('showposts=1&offset=9'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -146,7 +149,35 @@
 				<a href="<?php the_permalink() ?>">»続きを読む</a>
 			  <?php endwhile; ?>
 			<?php endif; ?>
-		</div>*/-->
+		</div>
+		<div><!-- 10 -->
+			記事１１
+			<?php query_posts('showposts=1&offset=10'); ?>
+			<?php if(have_posts()): ?>
+			  <?php while(have_posts()):the_post(); ?>
+				<a href="<?php the_permalink(); ?>">
+				  <?php the_post_thumbnail(array(150)); ?>
+				</a>
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<?php echo mb_substr(get_the_excerpt(), 0, 100); ?>
+				<a href="<?php the_permalink() ?>">»続きを読む</a>
+			  <?php endwhile; ?>
+			<?php endif; ?>
+		</div>
+		<div>記事１２</div>
+		<div>記事１３</div>
+		<div>記事１４</div>
+		<div>記事１５</div>
+		<div>記事１６</div>
+		<div>記事１７</div>
+		<div>記事１８</div>
+		<div>記事１９</div>
+		<div>記事２０</div>
+		<div>記事２１</div>
+		<div>記事２２</div>
+		<div>記事２３</div>
+		<div>記事２４</div>
+		<div>記事２５</div>
 	</div>
 </div>
 <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/scripts.js"></script>
