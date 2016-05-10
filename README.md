@@ -1,3 +1,12 @@
+# [jaga-theme]
+
+## sageテーマに必要なもの
+* Node.js(Ubuntuだとnode.jsでインストール後にnodeにnodejsをリンクする)
+* gulp(sudo npm install -g gulp)
+* Bower(sudo npm install -g bower)
+
+## 入れたプラグイン
+
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
