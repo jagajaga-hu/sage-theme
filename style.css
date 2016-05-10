@@ -42,7 +42,7 @@ ul#tab li:last-child {
 ul#tab li a {
 	display: block;
 	width: 138px;
-	padding: 8px 0;
+	padding: 0px 0;
 	text-decoration: none;
 	color: #222;
 }
@@ -60,9 +60,9 @@ ul#tab li.active a:hover {
 	clear: both;
 	overflow: hidden;
 	background: #f7f7f7;
-	width: 650px;
-	height: 200px;
-	padding: 20px;
+	width: 940px;
+	height: 1400px;
+	padding: 0px;
 }
 .tabbox {
 	display: none;
