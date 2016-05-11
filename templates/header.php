@@ -1,12 +1,15 @@
 <header class="banner">
-  <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><h2 class="logo" style="margin-top: 5px; margin-bottom: 5px;"><?php bloginfo('name'); ?></h2><!--メニューは固定ページとかカテゴリーとか作ってから（http://bazubu.com/how-to-setup-wp-navigation-menu-23785.html）--></a>
+  <div id="site_icon"></div>
+    <img src="http://52.11.116.50/wp-content/uploads/2016/05/cropped-icon.png" alt="" width="100" height="100">
+    JagaJaga 
+    <?php /* ?>
     <nav class="nav-primary">
       <?php
       if (has_nav_menu('primary_navigation')) :
         wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
       endif;
       ?>
-    </nav>
+          </nav>
+    <?php **/ ?>
   </div>
 </header>
