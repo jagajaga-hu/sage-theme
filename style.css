@@ -90,3 +90,8 @@ ul#tab li.active a:hover {
 .tabbox {
 	display: none;
 }
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
