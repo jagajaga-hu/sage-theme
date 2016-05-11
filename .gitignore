@@ -7,3 +7,7 @@ npm-debug.log
 vendor
 composer.lock
 nodebrew
+<<<<<<< HEAD
+=======
+wp-content/
+>>>>>>> 96dedb0f7c9e3c87381237bfb8ec3897a2a74c7a
