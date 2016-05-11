@@ -68,6 +68,7 @@ ul#tab li.active a:hover {
 	display: none;
 }
 
+/******************** style of bootstrap tab menu ********************/
 /* Tab Navigation */
 .nav-tabs {
 	zoom: 0.7;
@@ -94,4 +95,5 @@ ul#tab li.active a:hover {
     text-align: center;
     padding: 10px;
 }
+
 
