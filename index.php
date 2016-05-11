@@ -17,7 +17,8 @@
 <!-- 最新1,2,3,4,5 -->
 <div id="tiles-container">
 	<div class="tl-page" data-tl-template="tempD">
-	    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+        <?php $counter = 0; ?>
+	    <?php if(have_posts()): while(have_posts()): the_post(); $counter++; ?>
             <div>
                 <article <?php post_class('top_page'); ?>>
 			    <a href="<?php the_permalink(); ?>">
@@ -30,7 +31,10 @@
                 </a>
                 </article>
             </div>
-	    <?php endwhile; endif; ?>
+        <?php endwhile; endif; ?>
+        <?php for($i = $counter; $i<25; $i++): ?>
+            <div> Dummy! </div>
+        <?php endfor; ?>
 	</div>
 </div>
 <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/scripts.js"></script>
