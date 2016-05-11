@@ -70,6 +70,7 @@ ul#tab li.active a:hover {
 
 /* Tab Navigation */
 .nav-tabs {
+	zoom: 0.7;
     margin: 0;
     padding: 0;
     border: 0;    
