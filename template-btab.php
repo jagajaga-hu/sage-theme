@@ -74,3 +74,25 @@ body {
     </ul>
   </div>
 </nav>
+
+<nav class="nav-horizontal">
+<div class="mask">
+<ul class="list">
+  <li class="active"><a href="#tab1">ホーム</a></li>
+  <li><a href="#tab2">インタビュー</a></li>
+  <li><a href="#tab3">北海道</a></li>
+  <li><a href="#tab4">ネタ</a></li>
+  <li><a href="#tab5">サークル／部活</a></li>
+  <li><a href="#tab6">グルメ</a></li>
+  <li><a href="#tab7">お問い合わせ</a></li>
+  <li><a href="#tab8">JagaJagaとは</a></li>
+  <li><a href="#tab2">インタビュー</a></li>
+  <li><a href="#tab3">北海道</a></li>
+  <li><a href="#tab4">ネタ</a></li>
+  <li><a href="#tab5">サークル／部活</a></li>
+  <li><a href="#tab6">グルメ</a></li>
+  <li><a href="#tab7">お問い合わせ</a></li>
+  <li><a href="#tab8">JagaJagaとは</a></li>
+</ul>
+</div>
+</nav>

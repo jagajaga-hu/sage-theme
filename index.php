@@ -44,7 +44,7 @@
     </div>
   </div>
   <div class="tab-pane fade" id="tab2">
-    ここはタブメニュー2
+    ここはたぶめにゅー2
   </div>
   <div class="tab-pane fade" id="tab3">
     ここはタブメニュー3

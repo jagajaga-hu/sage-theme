@@ -25,6 +25,7 @@
   color: #333;
   height: 3em;
   line-height: 3;
+  white-space: nowrap;
 }
 .nav-horizontal .list a:hover {
   border-bottom: 2px solid black;
