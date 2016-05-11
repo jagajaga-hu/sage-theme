@@ -11,11 +11,34 @@ License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
 
-/******************** style of top page ********************/
+/******************** style of body ********************/
+body {
+    background-color: #098b54;
+}
+
+/******************** style of header ********************/
+#site_icon{
+    background-image: url("http://52.11.116.50/wp-content/uploads/2016/05/cropped-icon.png");
+    background-repeat: no-repeat
+    
+}
+
+header{
+    border-bottom: solid 1px #003E21;
+    background-color: #003E21;
+    color: #e4e4fd;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
 .logo{
-	text-align: right;
+    font-size: 40px;
 	font-family: fantasy;
 }
+/******************** style of top page ********************/
+
+
 
 .top-tytle{
 	text-align: center;
@@ -87,3 +110,14 @@ ul#tab li.active a:hover {
     box-shadow: inset 0 0 0 0 rgba(0,0,0,.4),-2px -3px 5px -2px rgba(0,0,0,.4);
 }
 
+<<<<<<< HEAD
+=======
+/* Tab Content */
+.tab-pane {
+    background: #F5F5F5;
+    box-shadow: 0 0 4px rgba(0,0,0,.4);
+    border-radius: 0;
+    text-align: center;
+    padding: 10px;
+}
+>>>>>>> 8e170553e6d0aa690bfed5ab445cf870e967b847

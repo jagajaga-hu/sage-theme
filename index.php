@@ -1,22 +1,6 @@
-<?php
-/**
- * Template Name: JsTile Template
- */
-?>
-
-  <!-- ここからjsTileスクリプト（js, css）と、jquery.easing（本当はこれらはmanifest.jsonに書きたい）-->
-  <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/assets/scripts/jquery.easing.1.3.js"></script>
-  <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/tl-style.css" rel="stylesheet" />
-  <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/style.css" rel="stylesheet" />
-  <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/jstiles.js"></script>
-  <!-- ここまでjsTileスクリプト... -->
-
-<!-- 横スクロールタブメニュー用のcssをここで最後に読み込む（優先されるように）-->
-<link href="<?php echo get_template_directory_uri(); ?>/scroll_tab_menu/style.css" rel="stylesheet"/>
-
 
 <!-- 人気記事スライダー -->
-<?php echo do_shortcode('[advps-slideshow optset="1"]'); ?>
+<?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 <nav class="nav-horizontal">
 <div class="mask">
