@@ -4,58 +4,73 @@
  */
 ?>
 
-  <!-- ここからjsTileスクリプト（js, css）と、jquery.easing（本当はこれらはmanifest.jsonに書きたい）-->
-  <script type="text/javascript"src="<?php echo get_template_directory_uri(); ?>/assets/scripts/jquery.easing.1.3.js"></script>
-  <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/tl-style.css" rel="stylesheet" />
-  <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/style.css" rel="stylesheet" />
-  <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/jstiles.js"></script>
-  <!-- ここまでjsTileスクリプト... -->
+    
+        <style>
+      .nav-horizontal {
+  background-color: #fff;
+  overflow: hidden;
+  height: 3em;
+  width: 100%;
+}
+.nav-horizontal .mask {
+  height: 5em;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.nav-horizontal .list {
+  display: inline-table;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.nav-horizontal .list li {
+  display: table-cell;
+}
+.nav-horizontal .list a {
+  display: block;
+  padding: 0 1em;
+  text-decoration: none;
+  color: #333;
+  height: 3em;
+  line-height: 3;
+}
+.nav-horizontal .list a:hover {
+  border-bottom: 2px solid black;
+  background-color: #f9f9f9;
+}
 
+* {
+  box-sizing: border-box;
+}
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
-  <li><a href="#tab2" data-toggle="tab">Profile</a></li>
-  <li><a href="#tab3" data-toggle="tab">Messages</a></li>
-  <li><a href="#tab4" data-toggle="tab">ネタ</a></li>
-  <li><a href="#tab5" data-toggle="tab">インタビュー</a></li>
-</ul>
- 
-<div class="tab-content">
-  <div class="tab-pane fade in active" id="tab1">
-  	<div id="tiles-container">
-	<div class="tl-page" data-tl-template="tempD">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		</div>
-		</div>
+body {
+  font-family: sans-serif;
+  padding-top: 100px;
+  width: 100vw;
+  background-color: #999;
+}
+
+    </style>
+
+    
+    
+    <nav class="nav-horizontal">
+  <div class="mask">
+    <ul class="list">
+      <li><a href="#">Alpha</a></li>
+      <li><a href="#">Beta</a></li>
+      <li><a href="#">Gamma</a></li>
+      <li><a href="#">Delta</a></li>
+      <li><a href="#">Epsilon</a></li>
+      <li><a href="#">Zeta</a></li>
+      <li><a href="#">Eta</a></li>
+      <li><a href="#">Theta</a></li>
+      <li><a href="#">Iota</a></li>
+      <li><a href="#">Kappa</a></li>
+      <li><a href="#">Lambda</a></li>
+      <li><a href="#">Mu</a></li>
+      <li><a href="#">Nu</a></li>
+      <li><a href="#">Xi</a></li>
+    </ul>
   </div>
-  <div class="tab-pane fade" id="tab2">Tab2 Content</div>
-  <div class="tab-pane fade" id="tab3">Tab3 Content</div>
-  <div class="tab-pane fade" id="tab4">ネタ記事でいっぱい</div>
-  <div class="tab-pane fade" id="tab5">インタビューのあらし</div>
-</div>
-
+</nav>

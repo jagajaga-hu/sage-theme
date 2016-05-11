@@ -11,10 +11,39 @@
   <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/jstiles.js"></script>
   <!-- ここまでjsTileスクリプト... -->
 
+<!-- 横スクロールタブメニュー用のcssをここで最後に読み込む（優先されるように）-->
+<link href="<?php echo get_template_directory_uri(); ?>/scroll_tab_menu/style.css" rel="stylesheet"/>
+
+
 <!-- 人気記事スライダー -->
 <?php echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
-<ul class="nav nav-tabs">
+    <nav class="nav-horizontal">
+  <div class="mask">
+    <ul class="list">
+      <li><a href="#">Alpha</a></li>
+      <li><a href="#">Beta</a></li>
+      <li><a href="#">Gamma</a></li>
+      <li><a href="#">Delta</a></li>
+      <li><a href="#">Epsilon</a></li>
+      <li><a href="#">Zeta</a></li>
+      <li><a href="#">Eta</a></li>
+      <li><a href="#">Theta</a></li>
+      <li><a href="#">Iota</a></li>
+      <li><a href="#">Kappa</a></li>
+      <li><a href="#">Lambda</a></li>
+      <li><a href="#">Mu</a></li>
+      <li><a href="#">Nu</a></li>
+      <li><a href="#">Xi</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<nav class="nav-horizontal">
+<div class="mask">
+<ul class="nav list">
   <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
   <li><a href="#tab2" data-toggle="tab">インタビュー</a></li>
   <li><a href="#tab3" data-toggle="tab">北海道</a></li>
@@ -24,6 +53,8 @@
   <li><a href="#tab7" data-toggle="tab">お問い合わせ</a></li>
   <li><a href="#tab8" data-toggle="tab">JagaJagaとは</a></li>
 </ul>
+</div>
+</nav>
 
 <div class="tab-content">
   <div class="tab-pane fade in active" id="tab1">
