@@ -18,6 +18,7 @@
 <div id="tiles-container">
 	<div class="tl-page" data-tl-template="tempD">
 		<div><!-- 0 -->
+		1
 			<?php query_posts('showposts=1'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -31,6 +32,7 @@
 			<?php endif; ?>
 		</div>
 		<div><!-- 1 -->
+		2
 			<?php query_posts('showposts=1&offset=1'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -44,6 +46,7 @@
 			<?php endif; ?>
 		</div>
 		<div><!-- 2 -->
+		3
 			<?php query_posts('showposts=1&offset=2'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -57,6 +60,7 @@
 			<?php endif; ?>
 		</div>
 		<div><!-- 3 -->
+		4
 			<?php query_posts('showposts=1&offset=3'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -70,6 +74,7 @@
 			<?php endif; ?>
 		</div>
 		<div><!-- 4 -->
+		5
 			<?php query_posts('showposts=1&offset=4'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -83,6 +88,7 @@
 			<?php endif; ?>
 		</div>
 		<div><!-- 5 -->
+		6
 			<?php query_posts('showposts=1&offset=5'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
@@ -96,6 +102,7 @@
 			<?php endif; ?>
 		</div>
 		<div><!-- 6 -->
+		7
 			<?php query_posts('showposts=1&offset=6'); ?>
 			<?php if(have_posts()): ?>
 			  <?php while(have_posts()):the_post(); ?>
