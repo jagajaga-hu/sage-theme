@@ -165,3 +165,7 @@
 	bottom:0;
 	right:0;
 }
+.tl-tile-content article a img{
+    width: auto;
+    height: 50%
+}
