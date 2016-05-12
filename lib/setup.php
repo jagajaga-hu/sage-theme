@@ -90,7 +90,8 @@ function display_sidebar() {
     is_page_template('template-custom.php'),
     is_page_template('template-usejstile.php'),
     is_page_template('template-usetabtab.php'),
-    is_page_template('template-btab.php')
+    is_page_template('template-btab.php'),
+    is_single()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
