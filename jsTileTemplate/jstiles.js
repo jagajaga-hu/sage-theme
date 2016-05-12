@@ -494,108 +494,6 @@
 				// }
 			}
 		},
-		tempD: {
-			tilesNum: 25,
-			columns: {
-				0: {
-					colClass: 'tl-col col-xs-12 col-sm-9 col-md-9',
-					start: '0',
-					end: '4'
-				},
-				1: {
-					colClass: 'tl-col col-xs-12 col-sm-3 col-md-3',
-					start: '5',
-					end: '6'
-				}
-			},
-			tiles: {
-				0: 'col-xs-12 col-sm-12 col-md-12',
-				1: 'col-xs-12 col-sm-5 col-md-5',
-				2: 'col-xs-12 col-sm-7 col-md-7',
-				3: 'col-xs-12 col-sm-7 col-md-7',
-				4: 'col-xs-12 col-sm-7 col-md-7',
-				5: 'col-xs-12 col-sm-12 col-md-12',
-				6: 'col-xs-12 col-sm-12 col-md-12',
-				7: 'col-xs-12 col-sm-4 col-md-3',
-				8: 'col-xs-12 col-sm-4 col-md-3',
-				9: 'col-xs-12 col-sm-4 col-md-3',
-				10: 'col-xs-12 col-sm-4 col-md-3',
-				11: 'col-xs-12 col-sm-4 col-md-3',
-				12: 'col-xs-12 col-sm-4 col-md-3',
-				13: 'col-xs-12 col-sm-4 col-md-3',
-				14: 'col-xs-12 col-sm-4 col-md-3',
-				15: 'col-xs-12 col-sm-4 col-md-3',
-				16: 'col-xs-12 col-sm-4 col-md-3',
-				17: 'col-xs-12 col-sm-4 col-md-3',
-				18: 'col-xs-12 col-sm-4 col-md-3',
-				19: 'col-xs-12 col-sm-4 col-md-3',
-				20: 'col-xs-12 col-sm-4 col-md-3',
-				21: 'col-xs-12 col-sm-4 col-md-3',
-				22: 'col-xs-12 col-sm-4 col-md-3',
-				23: 'col-xs-12 col-sm-4 col-md-3',
-				24: 'col-xs-12 col-sm-4 col-md-3',
-				25: 'col-xs-12 col-sm-4 col-md-3',
-				26: 'col-xs-12 col-sm-4 col-md-3'
-			},
-			animations: {
-				0: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
-				1: { tlClass:'tl-slide-left', tlClassF:'tl-slide-left-in', tlDelay:700},
-				2: { tlClass:'tl-slide-left', tlClassF:'tl-slide-left-in', tlDelay:200},
-				3: { tlClass:'tl-slide-left', tlClassF:'tl-slide-left-in', tlDelay:200},
-				4: { tlClass:'tl-slide-left', tlClassF:'tl-slide-left-in', tlDelay:200},
-				5: { tlClass:'tl-slide-right', tlClassF:'tl-slide-right-in', tlDelay:250},
-				6: { tlClass:'tl-slide-right', tlClassF:'tl-slide-right-in', tlDelay:500},
-				7: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				8: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				9: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				10: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				11: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				12: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				13: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				14: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				15: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				16: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				17: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				18: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				19: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				20: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				21: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				22: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				23: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				24: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				25: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
-				26: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200}
-			},
-			config: {
-				0: { ratio: '0.4'},
-				1: { ratio: '1.5'},
-				2: { ratio: '0.337'},
-				3: { ratio: '0.337'},
-				4: { ratio: '0.337'},
-				5: { ratio: '1.565'},
-				6: { ratio: '1.565'},
-				7: { ratio: '1.5'},
-				8: { ratio: '1.5'},
-				9: { ratio: '1.5'},
-				10: { ratio: '1.5'},
-				11: { ratio: '1.5'},
-				12: { ratio: '1.5'},
-				13: { ratio: '1.5'},
-				14: { ratio: '1.5'},
-				15: { ratio: '1.5'},
-				16: { ratio: '1.5'},
-				17: { ratio: '1.5'},
-				18: { ratio: '1.5'},
-				19: { ratio: '1.5'},
-				20: { ratio: '1.5'},
-				21: { ratio: '1.5'},
-				22: { ratio: '1.5'},
-				23: { ratio: '1.5'},
-				24: { ratio: '1.5'},
-				25: { ratio: '1.5'},
-				26: { ratio: '1.5'}
-			}
-		},
 		tempE: {
 			tilesNum: 5,
 			tiles: {
@@ -610,7 +508,7 @@
 				1: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
 				2: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
 				3: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
-				4: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+				4: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50}
 			}
 		},
 		tempCategory: {
