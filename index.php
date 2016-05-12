@@ -44,7 +44,8 @@
     </div>
   </div>
   <div class="tab-pane fade" id="tab2">
-   インタビュー
+   <h2>インタビュー</h2>
+   <p id="sample">デバイス幅に応じて文字の色が変わるサンプル。できた。</p>
   </div>
   <div class="tab-pane fade" id="tab3">
     ここはタブメニュー3
@@ -65,6 +66,19 @@
     <h3>まいねーむいず</h3> <h1>JaJaga</h1>
   </div>
 </div>
+
+<script>
+$(function() {
+        var w = $(window).width();
+        var x = 800;
+        if (w <= x) {
+            $('#sample').css({
+                color: 'red'
+            });
+        }
+});
+</script>
+
 
 <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/scripts.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/top_fixed_menu_script/script.js"></script>
