@@ -596,6 +596,23 @@
 				26: { ratio: '1.5'}
 			}
 		},
+		tempE: {
+			tilesNum: 5,
+			tiles: {
+				0: 'col-xs-12 col-sm 1 col-md-1',
+				1: 'col-xs-12 col-sm 1 col-md-1',
+				2: 'col-xs-12 col-sm 1 col-md-1',
+				3: 'col-xs-12 col-sm 1 col-md-1',
+				4: 'col-xs-12 col-sm 1 col-md-1'
+			},
+			animations: {
+				0: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+				1: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+				2: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+				3: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+				4: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
+			}
+		},
 		tempCategory: {
 			tilesNum: 25,
 			columns: {
