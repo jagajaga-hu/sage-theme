@@ -3,6 +3,7 @@
   overflow: hidden;
   height: 3em;
   width: 100%;
+  z-index: 1000;
 }
 .nav-horizontal .mask {
   height: 5em;
