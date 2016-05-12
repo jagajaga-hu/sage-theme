@@ -13,7 +13,7 @@ License URI:        http://opensource.org/licenses/MIT
 
 /******************** style of body ********************/
 body {
-    background-color: #098b54;
+    background-color: #ffffff;
 }
 
 /******************** style of header ********************/
@@ -43,6 +43,16 @@ header{
 .top-tytle{
 	text-align: center;
 }
+/******************** 記事で使う見出しのスタイル ********************/
+.post h3 { /* 記事内の H3 が対象になる */
+	border-style: solid;
+	border-color: #004400;
+	border-width: 0 0 1px 8px;
+	padding: 10px 0 10px 10px;
+	font-weight: bold;
+	font-size: 120%;
+}
+
 
 
 /******************** style of tab menu ********************/
