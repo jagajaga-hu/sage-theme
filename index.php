@@ -25,7 +25,7 @@
     	<div class="tl-page" data-tl-template="tempD">
             <?php $counter = 0; ?>
     	    <?php if(have_posts()): while(have_posts()): the_post(); $counter++; ?>
-                <div>
+                <div class="jstile">
                     <article <?php post_class('top_page'); ?>>
     			    <a href="<?php the_permalink(); ?>">
                     <?php if( has_post_thumbnail() ): ?>
