@@ -124,6 +124,8 @@ ul#tab li.active a:hover {
     z-index: 1;
 }
 .jstile-img {
+    width: auto;
+    height: 100%;
     overflow: auto;
 }
 .jstile-text {
