@@ -72,8 +72,26 @@ $(document).ready(function() {
 					2: { ratio: '1.5'},
 					3: { ratio: '1.5'},
 					4: { ratio: '1.5'},
-					5: { ratio: '1.5'}
-
+					5: { ratio: '1.5'},
+                    6: { ratio: '0.3'},
+                    7: { ratio: '1.5'},
+                    8: { ratio: '1.5'},
+                    9: { ratio: '1.5'},
+                    10: { ratio: '0.3'},
+                    11: { ratio: '0.3'},
+                    12: { ratio: '1.5'},
+                    13: { ratio: '1.5'},
+                    14: { ratio: '0.3'},
+                    15: { ratio: '1.5'},
+                    16: { ratio: '1.5'},
+                    17: { ratio: '1.5'},
+                    18: { ratio: '1.5'},
+                    19: { ratio: '1.5'},
+                    20: { ratio: '0.3'},
+                    21: { ratio: '0.3'},
+                    22: { ratio: '1.5'},
+                    23: { ratio: '1.5'},
+                    24: { ratio: '1.5'},
 				}
 			}
 		};    	
