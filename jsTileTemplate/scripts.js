@@ -177,7 +177,7 @@ $(document).ready(function() {
 					3: { ratio: '0.337'},
 					4: { ratio: '0.337'},
 					5: { ratio: '1.565'},
-					6: { ratio: '1.565'},
+					6: { ratio: '1.6'},
 					7: { ratio: '1.5'},
 					8: { ratio: '1.5'},
 					9: { ratio: '1.5'},

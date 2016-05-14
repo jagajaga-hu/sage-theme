@@ -37,8 +37,8 @@
 <nav class="drawer-nav">
   <ul class="drawer-menu">
     <!-- ドロワーメニューの中身 -->
-    <li>お問い合わせ</li>
-    <li>JagaJagaについて</li>
+    <li><a href="/wordpress/contact/">お問い合わせ</a></li>
+    <li><a href="/wordpress/about/">JagaJagaについて</a></li>
   </ul>
 </nav>
 </body>
