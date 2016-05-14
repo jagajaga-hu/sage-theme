@@ -42,8 +42,5 @@
     <li>リスト3</li>
   </ul>
 </nav>
-<section>
-<!-- コンテンツ部分 -->
-</section>
 </body>
 <!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->
