@@ -67,7 +67,12 @@ $(document).ready(function() {
 					26: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200}
 				},
 				config: {
-					0: { ratio: '0.4'}
+					0: { ratio: '0.6'},
+					1: { ratio: '1.5'},
+					2: { ratio: '1.5'},
+					3: { ratio: '1.5'},
+					4: { ratio: '1.5'},
+					5: { ratio: '1.5'}
 
 				}
 			}
