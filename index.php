@@ -32,7 +32,7 @@
                     <?php if($counter>4 || $counter==1): ?>
                         <div class="jstile-img col-xs-12" style="background-image: url(<?php echo $postthumb[0]; ?>)">
                     <?php else: ?>
-                        <div class="jstile-img col-xs-8" style="background-image: url(<?php echo $postthumb[0]; ?>)">
+                        <div class="jstile-img col-xs-8" style='background-image: url("<?php echo $postthumb[0]; ?>")'>
                     <?php endif; ?>
                     </div>
                     <?php if($counter>4 || $counter==1): ?>
