@@ -20,4 +20,30 @@
 <!-- 横スクロールタブメニュー用のcssをここで最後に読み込む（優先されるように）-->
 <link href="<?php echo get_template_directory_uri(); ?>/scroll_tab_menu/style.css" rel="stylesheet"/>
 
+<!-- ドロワーメニュー -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+
 </head>
+
+<!-- ここから、ドロワーメニュー -->
+<body class="drawer drawer--top">
+<!-- ハンバーガーボタン -->
+<button type="button" class="drawer-toggle drawer-hamburger">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"></span>
+</button>
+<nav class="drawer-nav">
+  <ul class="drawer-menu">
+    <!-- ドロワーメニューの中身 -->
+    <li>リスト1</li>
+    <li>リスト2</li>
+    <li>リスト3</li>
+  </ul>
+</nav>
+<section>
+<!-- コンテンツ部分 -->
+</section>
+</body>
+<!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->
