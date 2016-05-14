@@ -1,15 +1,28 @@
+@media screen and (max-width: 767px) {
+  .nav-horizontal {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-horizontal {
+    width: 750px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nav-horizontal {
+    width: 970px;
+  }
+}
 .nav-horizontal {
   background-color: #ffffff;
   font-size: 15px;
   overflow: hidden;
   height: 3em;
   border-bottom: 2px solid #003e21;
-  width: 100%;
   z-index: 1000;
 }
 .nav-horizontal .mask {
   height: 5em;
-  width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
