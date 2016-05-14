@@ -12,11 +12,26 @@ License URI:        http://opensource.org/licenses/MIT
 */
 
 /******************** style of body ********************/
-header, footer {
-	width: 970px;
-	margin-left: auto;
-	margin-right: auto;
+@media screen and (max-width: 767px) {
+	header, footer {
+		width: auto;
+	}
 }
+@media screen and (min-width: 768px) {
+	header, footer {
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (min-width: 992px) {
+	header, footer {
+		width: 970px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 body {
     background-color: #ffffff;
 }
@@ -42,6 +57,10 @@ header{
 	font-family: fantasy;
 }
 
+#burger{
+	font-size: 15px;
+	line-height: 35px;
+}
 
 /******************** style of bootstrap ********************/
 .container {
