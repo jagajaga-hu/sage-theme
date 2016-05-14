@@ -37,9 +37,8 @@
 <nav class="drawer-nav">
   <ul class="drawer-menu">
     <!-- ドロワーメニューの中身 -->
-    <li>リスト1</li>
-    <li>リスト2</li>
-    <li>リスト3</li>
+    <li>お問い合わせ</li>
+    <li>JagaJagaについて</li>
   </ul>
 </nav>
 </body>

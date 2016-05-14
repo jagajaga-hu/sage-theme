@@ -91,6 +91,8 @@ function display_sidebar() {
     is_page_template('template-usejstile.php'),
     is_page_template('template-usetabtab.php'),
     is_page_template('template-btab.php'),
+    is_page_template('template-contact.php'),
+    is_page_template('template-about.php'),
     is_single()
   ]);
 
