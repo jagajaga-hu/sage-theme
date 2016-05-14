@@ -28,14 +28,11 @@
                 <div class="jstile row">
                     <article <?php post_class('top_page'); ?>>
     			    <a href="<?php the_permalink(); ?>">
+                    <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
                     <?php if($counter>4 || $counter==1): ?>
-                        <div class="jstile-img col-xs-12">
+                        <div class="jstile-img col-xs-12" style="background-image: <?php echo $postthumb[0]; ?>">
                     <?php else: ?>
-                        <div class="jstile-img col-xs-8">
-                    <?php endif; ?>
-                    <?php if( has_post_thumbnail() ): ?>
-                        <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
-                        <img src="<?php echo $postthumb[0]; ?>" alt="">
+                        <div class="jstile-img col-xs-8" style="background-image: <?php echo $postthumb[0]; ?>">
                     <?php endif; ?>
                     </div>
                     <?php if($counter>4 || $counter==1): ?>
