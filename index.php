@@ -24,24 +24,32 @@
     <div id="tiles-container">
     	<div class="tl-page" data-tl-template="tempD">
             <?php $counter = 0; ?>
-    	    <?php if(have_posts()): while(have_posts()): the_post(); $counter++; ?>
+    	    <?php if(have_posts()): while(have_posts()): the_post(); ?>
                 <div class="jstile row">
                     <article <?php post_class('top_page'); ?>>
     			    <a href="<?php the_permalink(); ?>">
-                    <div class="jstile-img col-xs-8">
+                    <?php if($counter>4 || $counter==1): ?>
+                        <div class="jstile-img col-xs-8">
+                    <?php else: ?>
+                        <div class="jstile-img col-xs-12">
+                    <?php endif; ?>
                     <?php if( has_post_thumbnail() ): ?>
                         <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
                         <img src="<?php echo $postthumb[0]; ?>" alt="">
                     <?php endif; ?>
                     </div>
-                    <div class="jstile-text col-xs-4">
+                    <?php if($counter>4 || $counter==1): ?>
+                        <div class="jstile-text col-xs-4">
+                    <?php else: ?>
+                        <div class="jstile-text col-xs-12">
+                    <?php endif; ?>
     				<h2><?php the_title(); ?></h2>
                     <?php the_excerpt(); ?>»続きを読む
                     </div>
                     </a>
                     </article>
                 </div>
-            <?php endwhile; endif; ?>
+            <?php $counter++; endwhile; endif; ?>
             <?php for($i = $counter; $i<25; $i++): ?>
                 <div> Dummy! </div>
             <?php endfor; ?>
