@@ -25,15 +25,19 @@
     	<div class="tl-page" data-tl-template="tempD">
             <?php $counter = 0; ?>
     	    <?php if(have_posts()): while(have_posts()): the_post(); $counter++; ?>
-                <div class="jstile">
+                <div class="jstile row">
                     <article <?php post_class('top_page'); ?>>
     			    <a href="<?php the_permalink(); ?>">
+                    <div class="col-xs-8">
                     <?php if( has_post_thumbnail() ): ?>
-                            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
-                            <img src="<?php echo $postthumb[0]; ?>" alt="">
+                        <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
+                        <img src="<?php echo $postthumb[0]; ?>" alt="">
                     <?php endif; ?>
-    				    <h2><?php the_title(); ?></h2>
-                        <?php the_excerpt(); ?>»続きを読む
+                    </div>
+                    <div class="col-xs-4">
+    				<h2><?php the_title(); ?></h2>
+                    <?php the_excerpt(); ?>»続きを読む
+                    </div>
                     </a>
                     </article>
                 </div>
