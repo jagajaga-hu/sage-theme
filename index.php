@@ -30,7 +30,7 @@
     			    <a href="<?php the_permalink(); ?>">
                     <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
                     <?php if($counter>4 || $counter==1): ?>
-                        <div class="jstile-img col-xs-12" style="background-image: <?php echo $postthumb[0]; ?>">
+                        <div class="jstile-img col-xs-12" style="background-image: '<?php echo $postthumb[0]; ?>'">
                     <?php else: ?>
                         <div class="jstile-img col-xs-8" style="background-image: <?php echo $postthumb[0]; ?>">
                     <?php endif; ?>
