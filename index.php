@@ -29,11 +29,15 @@
                     <article <?php post_class('top_page'); ?>>
     			    <a href="<?php the_permalink(); ?>">
                     <?php if( has_post_thumbnail() ): ?>
-                        <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
-                        <img src="<?php echo $postthumb[0]; ?>" alt="">
+                        <div class="jstile-img">
+                            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
+                            <img src="<?php echo $postthumb[0]; ?>" alt="">
+                        </div>
                     <?php endif; ?>
-    				<h2><?php the_title(); ?></h2>
-                    <?php the_excerpt(); ?>»続きを読む
+                    <div class="jstile-text">
+    				    <h2><?php the_title(); ?></h2>
+                        <?php the_excerpt(); ?>»続きを読む
+                    </div>
                     </a>
                     </article>
                 </div>
