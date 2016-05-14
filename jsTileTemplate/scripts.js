@@ -15,27 +15,27 @@ $(document).ready(function() {
 					3: 'col-xs-4',
 					4: 'col-xs-6',
 					5: 'col-xs-6',
-					6: 'col-xs-4',
+					6: 'col-xs-12',
 					7: 'col-xs-4',
 					8: 'col-xs-4',
-					9: 'col-xs-12',
+					9: 'col-xs-4',
 					10: 'col-xs-12',
-					11: 'col-xs-6',
+					11: 'col-xs-12',
 					12: 'col-xs-6',
-					13: 'col-xs-12',
-					14: 'col-xs-6',
+					13: 'col-xs-6',
+					14: 'col-xs-12',
 					15: 'col-xs-6',
-					16: 'col-xs-4',
+					16: 'col-xs-6',
 					17: 'col-xs-4',
 					18: 'col-xs-4',
 					19: 'col-xs-4',
 					20: 'col-xs-12',
 					21: 'col-xs-12',
-					22: 'col-xs-12',
-					23: 'col-xs-12',
-					24: 'col-xs-12',
-					25: 'col-xs-12',
-					26: 'col-xs-12'
+					22: 'col-xs-6',
+					23: 'col-xs-6',
+					24: 'col-xs-4',
+					25: 'col-xs-4',
+					26: 'col-xs-4'
 				},
 				animations: {
 					0: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
@@ -65,6 +65,10 @@ $(document).ready(function() {
 					24: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
 					25: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
 					26: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200}
+				},
+				config: {
+					0: { ratio: '0.4'}
+
 				}
 			}
 		};    	
