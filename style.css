@@ -131,3 +131,14 @@ ul#tab li.active a:hover {
 .jstile-text {
     overflow: auto;
 }
+@media (min-width:1020px) and (max-width: 768px) {
+    .jstile
+}
+
+@media (max-width:767px) {
+    .jstile img {
+        width: auto;
+        height: auto;
+        display: inline-block;
+    }
+}
