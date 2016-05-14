@@ -26,20 +26,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
 
 </head>
-
-<!-- ここから、ドロワーメニュー -->
-<body class="drawer drawer--top">
-<!-- ハンバーガーボタン -->
-<button type="button" class="drawer-toggle drawer-hamburger">
-  <span class="sr-only">toggle navigation</span>
-  <span class="drawer-hamburger-icon"></span>
-</button>
-<nav class="drawer-nav">
-  <ul class="drawer-menu">
-    <!-- ドロワーメニューの中身 -->
-    <li><a href="/wordpress/contact/">お問い合わせ</a></li>
-    <li><a href="/wordpress/about/">JagaJagaについて</a></li>
-  </ul>
-</nav>
-</body>
-<!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->

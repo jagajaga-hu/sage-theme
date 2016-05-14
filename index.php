@@ -1,5 +1,3 @@
-<div class="col-lg-10 col-lg-offset-1">
-
 <!-- 人気記事スライダー -->
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
@@ -84,7 +82,6 @@
   <div class="tab-pane fade" id="tab8">
     <h3>まいねーむいず</h3> <h1>JaJaga</h1>
   </div>
-</div>
 </div>
 <script>
 $(function() {

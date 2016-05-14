@@ -352,7 +352,7 @@
 		templateObj: false,	//[object] --> provide a custom template object
 		pageHome: 0,	//[number] --> set the home page (if pageNum > 1)
 		tilePadding: false,	//[string] --> set tile padding in px or % or em etc
-		tileRatio: false,	//[number] --> set tile height/width ratio
+		tileRatio: "0.25",	//[number] --> set tile height/width ratio
 		sliderEasing: 'easeInOutExpo',
 		slideDuration: 450
 	}
