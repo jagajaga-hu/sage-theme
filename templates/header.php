@@ -1,3 +1,4 @@
+
 <header class="banner">
   <div id="site_icon"></div>
     <img src="http://52.11.116.50/wp-content/uploads/2016/05/cropped-icon.png" alt="" width="100" height="100">
