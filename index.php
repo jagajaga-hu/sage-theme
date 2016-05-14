@@ -19,7 +19,7 @@
 </nav>
 
 <div class="tab-content">
-  <!-- ホームタブ -->
+  <!-- ホームタブ{{{ -->
   <div class="tab-pane fade in active" id="tab1">
     <div id="tiles-container">
     	<div class="tl-page" data-tl-template="tempD">
@@ -44,9 +44,16 @@
     	</div>
     </div>
   </div>
+  <!-- ホームタブ}}} -->
   <div class="tab-pane fade" id="tab2">
-   <h2>インタビュー</h2>
-   <p id="sample">デバイス幅に応じて文字の色が変わるサンプル。できた。</p>
+    <h2>インタビュー</h2>
+        <p id="sample">デバイス幅に応じて文字の色が変わるサンプル。できた。</p>
+        <?php
+        $args = array( 'numberposts' => 'all','category' => 5, 'orderby' => 'desc');    
+        $rand_posts = get_posts( $args );    
+        foreach( $rand_posts as $post ) : ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+        <?php endforeach; ?>
   </div>
   <div class="tab-pane fade" id="tab3">
     ここはタブメニュー3
