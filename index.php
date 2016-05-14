@@ -29,9 +29,9 @@
                     <article <?php post_class('top_page'); ?>>
     			    <a href="<?php the_permalink(); ?>">
                     <?php if($counter>4 || $counter==1): ?>
-                        <div class="jstile-img col-xs-8">
-                    <?php else: ?>
                         <div class="jstile-img col-xs-12">
+                    <?php else: ?>
+                        <div class="jstile-img col-xs-8">
                     <?php endif; ?>
                     <?php if( has_post_thumbnail() ): ?>
                         <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
@@ -39,9 +39,9 @@
                     <?php endif; ?>
                     </div>
                     <?php if($counter>4 || $counter==1): ?>
-                        <div class="jstile-text col-xs-4">
-                    <?php else: ?>
                         <div class="jstile-text col-xs-12">
+                    <?php else: ?>
+                        <div class="jstile-text col-xs-4">
                     <?php endif; ?>
     				<h2><?php the_title(); ?></h2>
                     <?php the_excerpt(); ?>»続きを読む
