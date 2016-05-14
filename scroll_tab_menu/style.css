@@ -1,25 +1,8 @@
-@media screen and (max-width: 767px) {
-  .nav-horizontal {
-    width: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav-horizontal {
-    width: 750px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .nav-horizontal {
-    width: 970px;
-  }
-}
 .nav-horizontal {
-  background-color: #ffffff;
-  font-size: 15px;
+  background-color: #098b54;
   overflow: hidden;
-  width: 100%;
   height: 3em;
-  border-bottom: 2px solid #003e21;
+  width: 100%;
   z-index: 1000;
 }
 .nav-horizontal .mask {
@@ -40,16 +23,14 @@
   display: block;
   padding: 0 1em;
   text-decoration: none;
-  color: #333333;
+  color: #333;
   height: 3em;
   line-height: 3;
   white-space: nowrap;
 }
 .nav-horizontal .list a:hover {
-  font-weight: bolder;
   border-bottom: 2px solid black;
-  background-color: #003E21;
-  color: #ffffff;
+  background-color: #f9f9f9;
 }
 
 * {
@@ -57,9 +38,5 @@
 }
 
 .nav-horizontal .list li.active {
-  background-color: #003E21;
-}
-
-.nav-horizontal .list li.active a {
-  color: #ffffff;
+  background-color: #f9f9f9;
 }
