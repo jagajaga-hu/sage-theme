@@ -9,8 +9,9 @@
     $args = array(
         'hide_empty' => 1,
     );
-    foreach($category as $i => get_categories($args)){
-        echo '<li><a href="#tab"'.$i.'" data-toggle="tab">';
+    $categories = get_categories($args);
+    foreach($categories as $category){
+        echo '<li><a href="#tab'.$category->cat_ID.'" data-toggle="tab">';
         echo $category->name.'</a></li>';
     }
 ?>
