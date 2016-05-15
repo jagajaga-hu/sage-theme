@@ -155,3 +155,11 @@ header h5 {
         display: inline-block;
     }
 }
+
+
+
+/******************** style of footer ********************/
+footer {
+	background-color: #eeeeee;
+	border-top: solid 1px #000000;
+}

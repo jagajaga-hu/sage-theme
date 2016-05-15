@@ -29,7 +29,7 @@ function setup() {
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
     'utility_navigation' => __('Utility Navigation', 'sage'),
-    'footer_navigation' => __('Footer Navigation', 'sage')
+    'footer_navigation' => __('Footer Navigation', 'sage'),
   ]);
 
   // Enable post thumbnails
@@ -68,6 +68,33 @@ function widgets_init() {
   register_sidebar([
     'name'          => __('Footer', 'sage'),
     'id'            => 'sidebar-footer',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => __('Search', 'sage'),
+    'id'            => 'sidebar-search',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => __('Category', 'sage'),
+    'id'            => 'sidebar-category',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => __('Meta', 'sage'),
+    'id'            => 'sidebar-meta',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
