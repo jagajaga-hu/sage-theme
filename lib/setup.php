@@ -120,7 +120,8 @@ function display_sidebar() {
     is_page_template('template-btab.php'),
     is_page_template('template-contact.php'),
     is_page_template('template-about.php'),
-    is_single()
+    is_single(),
+    is_search()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

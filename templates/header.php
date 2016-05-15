@@ -4,6 +4,7 @@
   <a href="/index.php" id="logo">
   <img src="<?php echo get_template_directory_uri(); ?>/icon.png" alt="" width="30" height="30">
   JagaJaga</a><h5 class="no-mobile">- 北大情報プラットフォーム -</h5>
+
   <!-- ここから、ドロワーメニュー -->
   <div class="drawer drawer--top">
   <!-- ハンバーガーボタン -->
@@ -20,6 +21,7 @@
   </nav>
   </div>
   <!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->
+  <div class="search-box"><?php dynamic_sidebar('sidebar-search'); ?></div>
     
   </div>
 

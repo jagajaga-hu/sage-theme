@@ -13,7 +13,11 @@ $(document).ready(function() {
 				<?php dynamic_sidebar('sidebar-search'); ?>
 			</div>
 			<div class="col-sm-4">
-				<?php dynamic_sidebar('sidebar-category'); ?>
+				<?php if(is_user_logged_in()) : ?>
+				<a href="<?php echo wp_logout_url(); ?>">ログアウト</a>
+				<?php else : ?>
+				<a href="<?php echo wp_login_url(); ?>">ログイン</a>
+				<?php endif; ?>
 			</div>
 			<div class="col-sm-4">
 				<?php dynamic_sidebar('sidebar-meta'); ?>
