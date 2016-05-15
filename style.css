@@ -59,6 +59,11 @@ header{
 	color: #003E21;
 }
 
+header h5 {
+	display: inline-block;
+	padding-left: 10px;
+}
+
 .drawer {
 	display: inline-block;
 	float: right;
