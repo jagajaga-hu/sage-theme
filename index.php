@@ -57,34 +57,12 @@
         </div>
     </div>
     <!-- ホームタブ}}} -->
-    <div class="tab-pane fade" id="tab2">
-        <h2>インタビュー</h2>
-            <p id="sample">デバイス幅に応じて文字の色が変わるサンプル。できた。</p>
-        <?php
-        $args = array( 'numberposts' => 'all','category' => 5, 'orderby' => 'desc');    
-        $rand_posts = get_posts( $args );    
-        foreach( $rand_posts as $post ) : ?>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-        <?php endforeach; ?>
-  </div>
-  <div class="tab-pane fade" id="tab3">
-    ここはタブメニュー3
-  </div>
-  <div class="tab-pane fade" id="tab4">
-    ここはタブメニュー4
-  </div>
-  <div class="tab-pane fade" id="tab5">
-    ここはタブメニュー5
-  </div>
-  <div class="tab-pane fade" id="tab6">
-    ここはタブメニュー6
-  </div>
-  <div class="tab-pane fade" id="tab7">
-    ここはタブメニュー7
-  </div>
-  <div class="tab-pane fade" id="tab8">
-    <h3>まいねーむいず</h3> <h1>JaJaga</h1>
-  </div>
+    
+    <?php foreach($categories as $category): ?>
+    <div class="tab-pane fade" id="tab<?php $category->cat_ID; ?>">
+        <h2><?php echo $category->name; ?></h2>
+    </div>
+    <? endforeach; ?>
 </div>
 <script>
 $(function() {
