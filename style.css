@@ -63,7 +63,7 @@ header{
 	display: inline-block;
 	float: right;
 	font-size: 15px;
-	line-height: 30px
+	line-height: 30px;
 }
 
 .drawer-hamburger {
@@ -72,6 +72,10 @@ header{
 
 .drawer-hamburger-icon {
 	background-color: #000000;
+}
+
+.drawer-menu {
+	margin-left: 5px;	
 }
 
 /******************** style of bootstrap ********************/
