@@ -6,7 +6,7 @@ $(document).ready(function() {
 </script>
 <!-- ここまで、ドロワーメニューのjQuery -->
 
-<footer class="content-info">
+<footer class="content-info custom-footer">
   <div class="container">
 		<div class="row">
 			<div class="col-sm-12">

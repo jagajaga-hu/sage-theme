@@ -159,7 +159,4 @@ header h5 {
 
 
 /******************** style of footer ********************/
-footer {
-	background-color: #eeeeee;
-	border-top: solid 1px #000000;
-}
+/* jsTileTemplate/style.cssで定義 */
