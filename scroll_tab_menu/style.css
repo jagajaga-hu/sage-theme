@@ -31,6 +31,7 @@
   white-space: nowrap;
 }
 .nav-horizontal .list a:hover {
+  background-color: #ffffff;
 }
 
 * {
