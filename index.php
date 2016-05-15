@@ -62,7 +62,7 @@
     <div class="tab-pane fade" id="tab<?php $category->cat_ID; ?>">
         <h2><?php echo $category->name; ?></h2>
     </div>
-    <? endforeach; ?>
+    <?php endforeach; ?>
 </div>
 <script>
 $(function() {
