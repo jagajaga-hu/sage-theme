@@ -50,6 +50,7 @@ header{
     border-bottom: solid 1px #000000;
     background-color: #ffffff;
     font-size: 30px;
+    padding-left: 5px;
     margin-top: -22px;
     margin-bottom: 5px
 }
@@ -59,8 +60,8 @@ header{
 }
 
 .drawer {
-	text-align: right;
 	display: inline-block;
+	float: right;
 }
 
 .drawer-hamburger {
