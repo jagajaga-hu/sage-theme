@@ -16,6 +16,9 @@ License URI:        http://opensource.org/licenses/MIT
 	header, footer {
 		width: auto;
 	}
+	.no-mobile {
+		display: none;
+	}
 }
 @media screen and (min-width: 768px) {
 	header, footer {
