@@ -33,7 +33,7 @@ License URI:        http://opensource.org/licenses/MIT
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #e4f4fd;
 }
 
 /******************** style of header ********************/
@@ -114,4 +114,23 @@ header{
     position: fixed;
     top: 0;
     z-index: 1;
+}
+.jstile-img img {
+    width: auto;
+    height: 100%;
+    overflow: auto;
+}
+.jstile-text {
+    overflow: auto;
+}
+@media (min-width:1020px) and (max-width: 768px) {
+    .jstile
+}
+
+@media (max-width:767px) {
+    .jstile img {
+        width: auto;
+        height: auto;
+        display: inline-block;
+    }
 }
