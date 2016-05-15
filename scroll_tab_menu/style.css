@@ -31,7 +31,6 @@
   white-space: nowrap;
 }
 .nav-horizontal .list a:hover {
-  border-bottom: 2px solid black;
 }
 
 * {
