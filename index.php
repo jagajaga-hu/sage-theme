@@ -2,59 +2,63 @@
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 <nav class="nav-horizontal" id="global-nav">
-<div class="mask">
-<ul class="nav list">
-  <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
-  <li><a href="#tab2" data-toggle="tab">インタビュー</a></li>
-  <li><a href="#tab3" data-toggle="tab">北海道</a></li>
-  <li><a href="#tab4" data-toggle="tab">ネタ</a></li>
-  <li><a href="#tab5" data-toggle="tab">サークル／部活</a></li>
-  <li><a href="#tab6" data-toggle="tab">グルメ</a></li>
-</ul>
-</div>
+    <div class="mask">
+        <ul class="nav list">
+            <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
+            <?php
+                $args = array(
+                    'hide_empty' => 1,
+                );
+                foreach($category as $i => get_categories($args)){
+                    echo '<li><a href="#tab"'.$i.'" data-toggle="tab">';
+                    echo $category->name.'</a></li>'
+                }
+            ?>
+        </ul>
+    </div>
 </nav>
 
 <div class="tab-content">
   <!-- ホームタブ{{{ -->
-  <div class="tab-pane fade in active" id="tab1">
-    <div id="tiles-container">
-    	<div class="tl-page" data-tl-template="tempD">
-            <?php $counter = 0; ?>
-    	    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+    <div class="tab-pane fade in active" id="tab1">
+        <div id="tiles-container">
+            <div class="tl-page" data-tl-template="tempD">
+                <?php $counter = 0; ?>
+                <?php if(have_posts()): while(have_posts()): the_post(); ?>
                 <div class="jstile row">
                     <article <?php post_class('top_page'); ?>>
-    			    <a href="<?php the_permalink(); ?>">
-                    <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
-                    <?php if($counter>4 || $counter==1): ?>
-                        <div class="jstile-img col-xs-12">
-                            <img src="<?php echo $postthumb[0]; ?>" alt="">
-                    <?php else: ?>
-                        <div class="jstile-img col-xs-8">
-                            <img src="<?php echo $postthumb[0]; ?>" alt="">
-                    <?php endif; ?>
-                    </div>
-                    <?php if($counter>4 || $counter==1): ?>
-                        <div class="jstile-text col-xs-12">
-                    <?php else: ?>
-                        <div class="jstile-text col-xs-4">
-                    <?php endif; ?>
-    				<h2><?php the_title(); ?></h2>
-                    <?php the_excerpt(); ?>»続きを読む
-                    </div>
-                    </a>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
+                            <?php if($counter>4 || $counter==1): ?>
+                                <div class="jstile-img col-xs-12">
+                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
+                            <?php else: ?>
+                                <div class="jstile-img col-xs-8">
+                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
+                            <?php endif; ?>
+                                </div>
+                            <?php if($counter>4 || $counter==1): ?>
+                                <div class="jstile-text col-xs-12">
+                            <?php else: ?>
+                                <div class="jstile-text col-xs-4">
+                            <?php endif; ?>
+                                <h2><?php the_title(); ?></h2>
+                                <?php the_excerpt(); ?>»続きを読む
+                            </div>
+                        </a>
                     </article>
                 </div>
             <?php $counter++; endwhile; endif; ?>
             <?php for($i = $counter; $i<25; $i++): ?>
                 <div> Dummy! </div>
             <?php endfor; ?>
-    	</div>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- ホームタブ}}} -->
-  <div class="tab-pane fade" id="tab2">
-    <h2>インタビュー</h2>
-        <p id="sample">デバイス幅に応じて文字の色が変わるサンプル。できた。</p>
+    <!-- ホームタブ}}} -->
+    <div class="tab-pane fade" id="tab2">
+        <h2>インタビュー</h2>
+            <p id="sample">デバイス幅に応じて文字の色が変わるサンプル。できた。</p>
         <?php
         $args = array( 'numberposts' => 'all','category' => 5, 'orderby' => 'desc');    
         $rand_posts = get_posts( $args );    
