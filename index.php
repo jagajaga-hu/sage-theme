@@ -5,11 +5,17 @@
 <div class="mask">
 <ul class="nav list">
   <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
-  <li><a href="#tab2" data-toggle="tab">インタビュー</a></li>
-  <li><a href="#tab3" data-toggle="tab">北海道</a></li>
-  <li><a href="#tab4" data-toggle="tab">ネタ</a></li>
-  <li><a href="#tab5" data-toggle="tab">サークル／部活</a></li>
-  <li><a href="#tab6" data-toggle="tab">グルメ</a></li>
+<?php
+    $args = array(
+        'hide_empty' => 1,
+    );
+    foreach($category as $i => get_categories($args)){
+        echo '<li><a href="#tab"'.$i.'" data-toggle="tab">';
+        echo $category->name.'</a></li>';
+    }
+?>
+
+
 </ul>
 </div>
 </nav>
