@@ -1,4 +1,3 @@
-ここからtemplates/content-single.php
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <header>
@@ -13,4 +12,3 @@
     </footer>
   </article>
 <?php endwhile; ?>
-ここまでtemplates/content-single.php
