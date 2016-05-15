@@ -4,7 +4,7 @@
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
 <ul class="nav list">
-  <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
+  <li class="active"><a href="#tab0" data-toggle="tab">ホーム</a></li>
 <?php
     $args = array(
         'hide_empty' => 1,
@@ -15,16 +15,13 @@
         echo $category->name.'</a></li>';
     }
 ?>
-
-
 </ul>
 </div>
->>>>>>> develop2
 </nav>
 
 <div class="tab-content">
   <!-- ホームタブ{{{ -->
-    <div class="tab-pane fade in active" id="tab1">
+    <div class="tab-pane fade in active" id="tab0">
         <div id="tiles-container">
             <div class="tl-page" data-tl-template="tempD">
                 <?php $counter = 0; ?>
@@ -34,17 +31,17 @@
                         <a href="<?php the_permalink(); ?>">
                             <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
                             <?php if($counter>4 || $counter==1): ?>
-                                <div class="jstile-img col-xs-12">
-                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
+                            <div class="jstile-img col-xs-12">
+                                <img src="<?php echo $postthumb[0]; ?>" alt="">
                             <?php else: ?>
-                                <div class="jstile-img col-xs-8">
-                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
+                            <div class="jstile-img col-xs-8">
+                                <img src="<?php echo $postthumb[0]; ?>" alt="">
                             <?php endif; ?>
-                                </div>
+                            </div>
                             <?php if($counter>4 || $counter==1): ?>
-                                <div class="jstile-text col-xs-12">
+                            <div class="jstile-text col-xs-12">
                             <?php else: ?>
-                                <div class="jstile-text col-xs-4">
+                            <div class="jstile-text col-xs-4">
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
                                 <?php the_excerpt(); ?>»続きを読む
