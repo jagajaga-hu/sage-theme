@@ -10,8 +10,6 @@
   <li><a href="#tab4" data-toggle="tab">ネタ</a></li>
   <li><a href="#tab5" data-toggle="tab">サークル／部活</a></li>
   <li><a href="#tab6" data-toggle="tab">グルメ</a></li>
-  <li><a href="#tab7" data-toggle="tab">お問い合わせ</a></li>
-  <li><a href="#tab8" data-toggle="tab">JagaJagaとは</a></li>
 </ul>
 </div>
 </nav>
