@@ -2,20 +2,24 @@
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 <nav class="nav-horizontal" id="global-nav">
-    <div class="mask">
-        <ul class="nav list">
-            <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
-            <?php
-                $args = array(
-                    'hide_empty' => 1,
-                );
-                foreach($category as $i => get_categories($args)){
-                    echo '<li><a href="#tab"'.$i.'" data-toggle="tab">';
-                    echo $category->name.'</a></li>'
-                }
-            ?>
-        </ul>
-    </div>
+<div class="mask">
+<ul class="nav list">
+  <li class="active"><a href="#tab1" data-toggle="tab">ホーム</a></li>
+<?php
+    $args = array(
+        'hide_empty' => 1,
+    );
+    $categories = get_categories($args);
+    foreach($categories as $category){
+        echo '<li><a href="#tab'.$category->cat_ID.'" data-toggle="tab">';
+        echo $category->name.'</a></li>';
+    }
+?>
+
+
+</ul>
+</div>
+>>>>>>> develop2
 </nav>
 
 <div class="tab-content">
