@@ -59,7 +59,7 @@
     <!-- ホームタブ}}} -->
     
     <?php foreach($categories as $category): ?>
-    <div class="tab-pane fade" id="tab<?php $category->cat_ID; ?>">
+    <div class="tab-pane fade in" id="tab<?php $category->cat_ID; ?>">
         <h2><?php echo $category->name; ?></h2>
     </div>
     <?php endforeach; ?>
