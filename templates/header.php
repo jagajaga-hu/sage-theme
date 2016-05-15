@@ -6,7 +6,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/icon.png" alt="" width="30" height="30">
     JagaJaga</a>
   <!-- ここから、ドロワーメニュー -->
-  <div class="drawer drawer--top" id="burger">
+  <div class="drawer drawer--top">
   <!-- ハンバーガーボタン -->
   <button type="button" class="drawer-toggle drawer-hamburger">
     <span class="sr-only">toggle navigation</span>

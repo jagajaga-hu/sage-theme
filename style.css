@@ -62,6 +62,8 @@ header{
 .drawer {
 	display: inline-block;
 	float: right;
+	font-size: 15px;
+	line-height: 30px
 }
 
 .drawer-hamburger {
