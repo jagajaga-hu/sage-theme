@@ -33,37 +33,42 @@ License URI:        http://opensource.org/licenses/MIT
 }
 
 body {
-    background-color: #e4f4fd;
+    background-color: #ffffff;
+}
+
+a {
+	color: #105030;
 }
 
 /******************** style of header ********************/
 #site_icon{
-    background-image: url("http://52.11.116.50/wp-content/uploads/2016/05/cropped-icon.png");
     background-repeat: no-repeat
     
 }
 
 header{
-    border-bottom: solid 1px #003E21;
-    background-color: #003E21;
-    color: #e4e4fd;
-    font-size: 40px;
+    border-bottom: solid 1px #000000;
+    background-color: #ffffff;
+    font-size: 30px;
     margin-top: -22px;
     margin-bottom: 5px
 }
 
-.logo{
-    font-size: 40px;
-	font-family: fantasy;
+#logo {
+	color: #003E21;
 }
 
-#burger{
-	font-size: 15px;
-	line-height: 35px;
+.drawer {
+	text-align: right;
+	display: inline-block;
+}
+
+.drawer-hamburger {
+	position: relative;
 }
 
 .drawer-hamburger-icon {
-	background-color: #003e21;
+	background-color: #000000;
 }
 
 /******************** style of bootstrap ********************/

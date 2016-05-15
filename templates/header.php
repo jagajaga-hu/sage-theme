@@ -1,5 +1,10 @@
 <header class="banner">
   
+  
+  <div id="site_icon"></div>
+    <a href="/wordpress/" id="logo">
+    <img src="<?php echo get_template_directory_uri(); ?>/icon.png" alt="" width="30" height="30">
+    JagaJaga</a>
   <!-- ここから、ドロワーメニュー -->
   <div class="drawer drawer--top" id="burger">
   <!-- ハンバーガーボタン -->
@@ -16,20 +21,7 @@
   </nav>
   </div>
   <!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->
-  
-  <div id="site_icon"></div>
-    <a href="/wordpress/" style="color: #ffffff;">
-    <img src="http://52.11.116.50/wp-content/uploads/2016/05/cropped-icon.png" alt="" width="100" height="100">
-    JagaJaga</a>
-    <?php /* ?>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-          </nav>
-    <?php **/ ?>
+    
   </div>
 
 </header>
