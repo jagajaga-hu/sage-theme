@@ -21,6 +21,8 @@
   </nav>
   </div>
   <!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->
+
+  <!-- 検索ボックス -->
   <div class="search-box"><?php dynamic_sidebar('sidebar-search'); ?></div>
     
   </div>
