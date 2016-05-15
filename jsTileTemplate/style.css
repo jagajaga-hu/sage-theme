@@ -371,12 +371,13 @@ code.code-scroll {
 
 /* Footer */
 footer {
+	border-top: solid 1px #000000;
 	position:relative;
 	margin-top:50px;
 	padding-top:40px;
 	padding-bottom:40px;
 	text-align:center;
-	background-color:#333;	
+	background-color:#ffffff;
 }
 #kapa_logo {
 	position:absolute;
@@ -393,8 +394,6 @@ footer i {
 	font-weight:100;
 	color:#fff;
 }
-footer a,
-footer a:hover { color:#d8d8d8 }
 
 /* .content-hidden .githubAnchor { float:left } */
 @media (max-width:1200px) {
