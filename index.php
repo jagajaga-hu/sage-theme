@@ -68,6 +68,15 @@
     <?php foreach($categories as $category): ?>
     <div class="tab-pane fade" id="tab<?php echo $category->cat_ID; ?>">
         <h2><?php echo $category->name; ?></h2>
+        <div class="article-list">
+            <div class="article-list-left">
+                <img src="">
+            </div>
+            <div class="article-list-right">
+                <h2>title</h2>
+                caption
+            </div>
+        </div> 
     </div>
     <?php endforeach; ?>
 </div>
