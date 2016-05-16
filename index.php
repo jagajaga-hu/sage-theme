@@ -2,7 +2,9 @@
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 <div id="garally">
-北大生はもっと面白い
+    <div id="garally-caption">
+        北大生はもっと面白い
+    </div>
 </div>
 
 
