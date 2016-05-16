@@ -21,5 +21,3 @@ $(document).ready(function() {
 		</div>
   </div>
 </footer>
-
-<!--/*<?php echo do_shortcode('[maxmegamenu location=footer_navigation]'); ?>*/-->

@@ -64,10 +64,8 @@
         </div>
     </div>
     <!-- ホームタブ}}} -->
-    
     <?php foreach($categories as $category): ?>
     <div class="tab-pane fade" id="tab<?php echo $category->cat_ID; ?>">
-        <h2><?php echo $category->name; ?></h2>
     <?php $args = array(
         'category' => $category->cat_ID,
         'orderby' => 'date'
@@ -82,8 +80,10 @@
                 <img src="<?php echo $postthumb[0]; ?>" alt="">
             </div>
             <div class="article-list-right">
+                <span class="date"><?php the_time('Y.m.d'); ?></span>
+                <span class="tag tag_awarded">殿堂入り</span>
+                <span class="tag tag_hot">HOT</span>
                 <h1><?php the_title(); ?></h1>
-                <?php the_excerpt(); ?>»続きを読む
             </div>
         </div> 
     <?php endforeach; ?>

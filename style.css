@@ -89,32 +89,122 @@ a {
 /********************}}} style of body ********************/
 /********************{{{ style of index ********************/
 
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+}
 .article-list {
     width: 100%;
-    height: 160px;
+    height: 180px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 3px dotted #f1f1f1;
+}
+@media screen and (max-width: 767px) {
+    .article-list {
+        height: 120px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 3px dotted #f1f1f1;
+   }
 }
 .article-list-left {
-    display: inline-block;
+    float: left;
     width: 240px;
     height: 100%;
     overflow: hidden;
-    vertical-align: top;
 }
 .article-list-left img {
     width: 100%;
 }
-
-.article-list-right {
-    display: inline-block;
-    width: auto;
-    height: 100%; 
+@media screen and (max-width: 767px) {
+    .article-list-left {
+        width: 160px;
+    }
 }
-
+.article-list-right {
+    float: right;
+    width: 100%;
+    height: 100%; 
+    margin-left: -240px;
+    padding-left: 250px;
+    word-wrap: break-word;
+}
 .article-list-right h1 {
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: normal;
     top: 5%;
 }
+.article-list-right .date {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+    .article-list-right {
+        margin-left: -160px;
+        padding-left: 170px;
+    }
+    .article-list-right h1 {
+        font-size: 16px;
+        font-weight: 100;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        top: 0%;
+    }
+    .article-list-right .date {
+        font-size: 10px;
+        font-weight: 100;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+}
+
+.tag {
+    font-size: 16px;
+    float: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.tag_awarded {
+    background-color: #fff100;
+    color: #000000;
+}
+.tag_hot {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 767px) {
+    .tag {
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    .tag_awarded {
+        background-color: #fff100;
+        color: #000000;
+    }
+    .tag_hot {
+        background-color: #ff0000;
+        color: #ffffff;
+    }
+
+}
+
 .article-list:hover {
     background-color: rgba(9,139,84,.3)
 }
