@@ -68,15 +68,25 @@
     <?php foreach($categories as $category): ?>
     <div class="tab-pane fade" id="tab<?php echo $category->cat_ID; ?>">
         <h2><?php echo $category->name; ?></h2>
-        <div class="article-list">
+    <?php $args = array(
+        'category' => $category->cat_ID,
+        'orderby' => 'date'
+    );
+    $category_posts = get_posts($args);
+    foreach($category_posts as $post): setup_postdata($post);
+    $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium');
+    ?>
+        <div class="article-list" data-url="<?php the_permalink(); ?>">
+ 
             <div class="article-list-left">
-                <img src="">
+                <img src="<?php echo $postthumb[0]; ?>" alt="">
             </div>
             <div class="article-list-right">
-                <h2>title</h2>
-                caption
+                <h1><?php the_title(); ?></h1>
+                <?php the_excerpt(); ?>»続きを読む
             </div>
         </div> 
+    <?php endforeach; ?>
     </div>
     <?php endforeach; ?>
 </div>
@@ -89,6 +99,9 @@ $(function() {
                 color: 'red'
             });
         }
+});
+jQuery('.article-list').click(function() {
+    location.href = jQuery(this).attr('data-url');
 });
 </script>
 

@@ -17,7 +17,7 @@ License URI:        http://opensource.org/licenses/MIT
     src: url('assets/fonts/Harenosora.otf') format("opentype");
 }
 
-/******************** style of body ********************/
+/********************{{{ style of body ********************/
 @media screen and (max-width: 767px) {
 	header, footer {
 		width: auto;
@@ -86,25 +86,39 @@ a {
 }
 
 
-/******************** style of index ********************/
+/********************}}} style of body ********************/
+/********************{{{ style of index ********************/
 
 .article-list {
-    position: relative;
     width: 100%;
-    height: 100px;
-    border: solid #000000
+    height: 160px;
 }
 .article-list-left {
-
+    display: inline-block;
+    width: 240px;
+    height: 100%;
+    overflow: hidden;
+    vertical-align: top;
 }
-.article-list-left {
-
+.article-list-left img {
+    width: 100%;
 }
 
-.article-list-left {
-
+.article-list-right {
+    display: inline-block;
+    width: auto;
+    height: 100%; 
 }
 
+.article-list-right h1 {
+    font-size: 12px;
+    font-weight: bold;
+    top: 5%;
+}
+.article-list:hover {
+    background-color: rgba(9,139,84,.3)
+}
+/********************}}} style of index ********************/
 /******************** style of header ********************/
 #site_icon{
     background-repeat: no-repeat
