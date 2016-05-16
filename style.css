@@ -276,9 +276,11 @@ header input.search-field {
 .jstile-text a{
 	color: #000000;
 }
-.col-xs-6.jstile-img img { /*ホームの記事0の画像スタイル*/
+.col-xs-3.col-sm-6.jstile-img img { /*jsTileの横長タイル内画像のスタイル*/
 	width: 100%;
-	object-position: center center;
+}
+.col-xs-3.col-sm-12.jstile-img img {
+	width: 100%;
 }
 .jstile-text.col-sm-6 {
 	padding: 0 10px;
