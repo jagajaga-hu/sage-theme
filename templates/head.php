@@ -9,6 +9,7 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/tab.js"></script>
   <!-- jsTileのサンプルで使ってたフォントをとりあえず入れてみた -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+    <link rel="SHORTCUT ICON" href="../favicon.ico">
   <?php wp_head(); ?>
   
   <!-- ここからjsTileスクリプト（js, css）と、jquery.easing（本当はこれらはmanifest.jsonに書きたい）-->
