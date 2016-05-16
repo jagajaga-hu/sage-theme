@@ -1,6 +1,11 @@
 <!-- 人気記事スライダー -->
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
+<div id="garally">
+北大生はもっと面白い
+</div>
+
+
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
 <ul class="nav list">
@@ -59,7 +64,7 @@
     <!-- ホームタブ}}} -->
     
     <?php foreach($categories as $category): ?>
-    <div class="tab-pane fade in" id="tab<?php $category->cat_ID; ?>">
+    <div class="tab-pane fade" id="tab<?php $category->cat_ID; ?>">
         <h2><?php echo $category->name; ?></h2>
     </div>
     <?php endforeach; ?>
