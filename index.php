@@ -36,22 +36,27 @@
                 <div class="jstile row">
                     <article <?php post_class('top_page'); ?>>
                         <a href="<?php the_permalink(); ?>">
-                            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium') ; ?>
+                            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large') ; ?>
                             <?php if($counter>4 || $counter==1): ?>
-                            <div class="jstile-img col-xs-12">
-                                <img src="<?php echo $postthumb[0]; ?>" alt="">
+                                <div class="jstile-img col-xs-12">
+                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
+                            <?php elseif($counter==0): ?>
+                                <div class="col-xs-6 jstile-img">
+                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
                             <?php else: ?>
                             <div class="jstile-img col-xs-8">
                                 <img src="<?php echo $postthumb[0]; ?>" alt="">
                             <?php endif; ?>
                             </div>
                             <?php if($counter>4 || $counter==1): ?>
-                            <div class="jstile-text col-xs-12">
+                                <div class="jstile-text col-xs-12">
+                            <?php elseif($counter==0): ?>
+                                <div class="jstile-text col-sm-6">
                             <?php else: ?>
-                            <div class="jstile-text col-xs-4">
+                                <div class="jstile-text col-xs-4">
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
-                                <?php the_excerpt(); ?>»続きを読む
+                                <?php the_advanced_excerpt(); ?>
                             </div>
                         </a>
                     </article>

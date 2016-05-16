@@ -270,14 +270,20 @@ header input.search-field {
     top: 0;
     z-index: 1;
 }
-.jstile-img img {
-    width: auto;
-    height: 100%;
-    overflow: auto;
-}
 .jstile-text {
     overflow: auto;
 }
+.jstile-text a{
+	color: #000000;
+}
+.col-xs-6.jstile-img img { /*ホームの記事0の画像スタイル*/
+	width: 100%;
+	object-position: center center;
+}
+.jstile-text.col-sm-6 {
+	padding: 0 10px;
+}
+
 @media (min-width:1020px) and (max-width: 768px) {
     .jstile
 }

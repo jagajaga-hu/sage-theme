@@ -13,7 +13,7 @@ body {
 .marginTop-sm { margin-top:10px }
 .marginTop-md { margin-top:20px }
 .marginTop-lg { margin-top:30px }
-p, ul li { font-size:1.2em }
+ul li { font-size:1.2em }
 #header {
 	/* margin-bottom:30px; */
 	background-color:#111;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6 { font-weight:100 }
 	width: 100%;
 }
 .tl-tile h2 {
-	color:#fff; 
+	color:#105030; 
 	padding-left:10px;
 }
 /* Page#1 */
@@ -193,7 +193,7 @@ h1,h2,h3,h4,h5,h6 { font-weight:100 }
 	z-index:999;
 }
 .tl-tile-content {
-	background-color:#f1f1f1;
+	background-color:#ffffff;
 	overflow:hidden;
 }
 

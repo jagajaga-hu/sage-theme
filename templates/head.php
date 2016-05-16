@@ -21,11 +21,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
   <!-- ここまでドロワーメニュー -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 
   <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/tl-style.css" rel="stylesheet" />
   <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/style.css" rel="stylesheet" />
   <!-- 横スクロールタブメニュー用のcssをここで最後に読み込む（優先されるように）-->
   <link href="<?php echo get_template_directory_uri(); ?>/scroll_tab_menu/style.css" rel="stylesheet"/>
-  <!-- sage-theme直下のステイルシート（これが最優先されるから、これで上書きできる） -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
