@@ -11,6 +11,12 @@ License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
 
+/*******************************************************/
+@font-face {
+    font-family: harenosora;
+    src: url('assets/fonts/Harenosora.otf') format("opentype");
+}
+
 /******************** style of body ********************/
 @media screen and (max-width: 767px) {
 	header, footer {
@@ -60,8 +66,8 @@ License URI:        http://opensource.org/licenses/MIT
     }
     #garally #garally-caption {
         background: rgba(255, 255, 255, .4);
-        font-family: sans-serif;
-        color: #000000;
+        font-family: harenosora;
+        color: #050505;
         font-size: 40px;
         text-align: right;
         padding: 5px;
