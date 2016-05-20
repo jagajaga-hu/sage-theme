@@ -406,6 +406,7 @@ header input.search-field {
 }
 /******************** style of footer ********************/
 .pagination {
+    display: inline;
     margin: 40px 0 30px;
     text-align: center;
 }
@@ -414,6 +415,7 @@ header input.search-field {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 .pagination li a,
 .pagination li > span {
