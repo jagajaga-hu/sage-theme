@@ -5,8 +5,8 @@
         <?php get_template_part('templates/entry-meta'); ?>
         <?php if(get_query_var('page')==0):
         $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
-        <div class="entry-eyecatch">
-            <img src="<?php echo $postthumb[0]; ?>" alt="">
+        <div class="entry-eyecatch row">
+            <img class="col-xs-12" src="<?php echo $postthumb[0]; ?>" alt="">
         </div>
         <?php endif; ?>
         <div class="entry-content">
