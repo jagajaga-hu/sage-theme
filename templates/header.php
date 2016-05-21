@@ -1,4 +1,4 @@
-<header class="banner" style="margin-top: -22px">
+<header class="banner">
   
   <div class="site-icon">
   <a href="<?= home_url('/');?>" id="logo">
