@@ -9,7 +9,7 @@
     <meta property="og:url" content="<?php echo get_template_directory_uri().get_the_permalink(); ?>">
     <meta property="og:description" content="<?php echo wp_trim_words( $post->post_content, 100, '...' ); ?>">
         <?php if(has_post_thumbnail()): ?>
-            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>    
+            <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'facebook'); ?> 
     <meta property="og:image" content="<?php echo get_template_directory_uri().$postthumb[0]; ?>">
         <?php else: ?>
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/icon.png">
