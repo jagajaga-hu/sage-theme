@@ -61,11 +61,11 @@
                                 <h2><?php the_title(); ?></h2>
                             <!-- ここから、記事本文抜粋 -->
                             <?php if($counter==0): ?>
-                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 400, "…", "UTF-8"); ?>
+                                <?php echo mb_substr(get_the_excerpt(), 0, 200); ?>
                             <?php elseif($counter==1): ?>
-                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 350, "…", "UTF-8"); ?>
+                                <?php echo mb_substr(get_the_excerpt(), 0, 150); ?>
                             <?php else: ?>
-                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 100, "…", "UTF-8"); ?>
+                                <?php echo mb_substr(get_the_excerpt(), 0, 60); ?>
                             <?php endif; ?>
                             </div>
                         </a>
