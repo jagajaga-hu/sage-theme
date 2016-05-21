@@ -506,26 +506,31 @@ h2.entry-title {
     width: auto;
 }
 
-.page-navigation li a,
-.page-navigation li > div {
+.page-navigation li div.nav-wrap {
     display: inline-block;
     position: relative;
     margin: 0 10px;
     width: 50px;
     height: 50px;
-    /**border: solid 1px #cccccc;**/
+    color: #4cb468;
+    border: solid 2px #4cb468;
     border-radius: 25px;
+
 }
-.page-navigation li div {
+.page-navigation li a div.nav-wrap {
+    color: #ffffff;
     background-color: #4cb468;
 }
 .page-navigation li div span {
     display: inline-block;
     position: absolute;
     top: 50%;
+    left: 0;
     padding: 0;
-    margin-top: -1.0rem;
-    color: #000000;
+    width: 100%;
+    margin-top: -1.5rem;
+    margin-right: 0;
+    margin-left: 0;
     font-size: 20px;
     text-align: center;
     vertical-align: middle;
