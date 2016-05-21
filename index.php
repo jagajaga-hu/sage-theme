@@ -65,7 +65,7 @@
                             <?php elseif($counter==1): ?>
                                 <?php echo mb_strimwidth(get_the_excerpt(), 0, 350, "…", "UTF-8"); ?>
                             <?php else: ?>
-                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 100, "…", "UTF-8"); ?>
+                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 1, "…", "UTF-8"); ?>
                             <?php endif; ?>
                             </div>
                         </a>
