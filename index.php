@@ -60,6 +60,7 @@
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
                             <!-- ここから、記事本文抜粋 -->
+                            <?php the_excerpt(); ?>
                             </div>
                         </a>
                     </article>
