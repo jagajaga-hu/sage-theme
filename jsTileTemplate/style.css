@@ -193,7 +193,8 @@ h1,h2,h3,h4,h5,h6 { font-weight:100 }
 	z-index:999;
 }
 .tl-tile-content {
-	background-color:#fdfdfd;
+	background-color:#fafafa;
+	/*border: outset 3px #e5e5e5;*/
 	overflow:hidden;
 }
 

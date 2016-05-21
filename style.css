@@ -81,6 +81,9 @@ body {
     .tl-tile-content .top-article h2 {
         font-size: 26px;
     }
+    div.col-xs-9.col-sm-7.jstile-text {
+        padding-left: 10px;
+    }
 }
 @media screen and (min-width: 992px) {
 	header, footer {

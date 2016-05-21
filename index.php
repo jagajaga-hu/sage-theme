@@ -55,15 +55,23 @@
                                 <div class="col-xs-9 col-sm-7 jstile-text">
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
-                            <!-- ここから、記事本文抜粋 -->
+                            <!-- ここから、記事本文抜粋（幅768px以上の時のみ） -->
                             <?php if($counter==0 && strlen(get_the_content())>200): ?>
-                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 200); ?>
+                                <div class="no-mobile">
+                                    <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 200); ?>
+                                </div>
                             <?php elseif($counter==1 && strlen(get_the_content())>150): ?>
-                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 150); ?>
-                            <?php elseif(strlen(get_the_content())>60): ?>
-                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 60); ?>
+                                <div class="no-mobile">
+                                    <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 150); ?>
+                                </div>
+                            <?php elseif(strlen(get_the_content())>50): ?>
+                                <div class="no-mobile">
+                                    <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 50); ?>
+                                </div>
                             <?php else: ?>
-                                <?php the_excerpt(); ?>
+                                <div class="no-mobile">
+                                    <?php the_excerpt(); ?>
+                                </div>
                             <?php endif; ?>
                             </div>
                         </a>
