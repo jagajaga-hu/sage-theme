@@ -60,13 +60,6 @@
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
                             <!-- ここから、記事本文抜粋 -->
-                            <?php if($counter==0 && ): ?>
-                                <?php echo mb_substr(get_the_excerpt()); ?>
-                            <?php elseif($counter==1): ?>
-                                <?php echo mb_substr(get_the_excerpt()); ?>
-                            <?php else: ?>
-                                <?php echo mb_substr(get_the_excerpt()); ?>
-                            <?php endif; ?>
                             </div>
                         </a>
                     </article>
