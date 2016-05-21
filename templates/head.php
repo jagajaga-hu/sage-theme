@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 記事ページの場合のメタデータ記述 -->
     <?php if( is_single()): ?>
-    <meta property="og:type" content:"article">
-    <meta property="og:title" content:"<?php the_title(); ?>">
-    <meta property="og:url" content:"<?php the_permallink(); ?>">
-    <meta property="og:description" content:"<?php echo wp_trim_words( $post->post_content, 100, '...' );?>">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="<?php the_title(); ?>">
+    <meta property="og:url" content="<?php the_permallink(); ?>">
+    <meta property="og:description" content="<?php echo wp_trim_words( $post->post_content, 100, '...' );?>">
         <?php if(has_post_thumbnail()): ?>
             <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>    
     <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
