@@ -29,7 +29,7 @@ body {
 	.no-mobile {
 		display: none;
 	}
-	.search-box {
+	.only-pc-top-right-menu {
 		display: none;
 	}
     #garally {
@@ -47,10 +47,19 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.search-box {
+    header ul {
+        margin-top: 17px;
+        list-style: none;
+        vertical-align: middle;
+    }
+    header ul li {
+        margin-left: 8px;
+        float: right;
+        font-size: 14px;
+    }
+	.only-pc-top-right-menu {
 		display: inline-block;
 		float: right;
-		margin-right: 30px;
 	}
     #garally {
         position: relative;
@@ -60,6 +69,9 @@ body {
         background-position: center center;
         background-size: cover;
     }
+    .no-pc {
+        display: none;
+    }
 }
 @media screen and (min-width: 992px) {
 	header, footer {
@@ -67,10 +79,19 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.search-box {
+    header ul {
+        margin-top: 17px;
+        list-style: none;
+        vertical-align: middle;
+    }
+    header ul li {
+        margin-left: 8px;
+        float: right;
+        font-size: 14px;
+    }
+	.only-pc-top-right-menu {
 		display: inline-block;
 		float: right;
-		margin-right: 30px;
 	}
     #garally {
         position: relative;
@@ -90,6 +111,9 @@ body {
         position: absolute;
         top: 60%;
         width: 100%;
+    }
+    .no-pc {
+        display: none;
     }
 }
 
@@ -355,6 +379,11 @@ header input.search-field {
 
 
 /******************** style of tab menu ********************/
+.disnon {
+    display: none;
+}
+
+/******************** style in tile ********************/
 .fixed {
     position: fixed;
     top: 0;

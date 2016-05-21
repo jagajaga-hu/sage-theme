@@ -11,7 +11,7 @@
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
 <ul class="nav list">
-  <li class="active"><a href="#tab0" data-toggle="tab">ホーム</a></li>
+  <li><a href="#tab0" data-toggle="tab">ホーム</a></li>
 <?php
     $args = array(
         'hide_empty' => 1,
@@ -108,7 +108,6 @@ jQuery('.article-list').click(function() {
     location.href = jQuery(this).attr('data-url');
 });
 </script>
-
 
 <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/scripts.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/top_fixed_menu_script/script.js"></script>
