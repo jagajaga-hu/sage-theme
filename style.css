@@ -267,6 +267,55 @@ article footer nav ul a li {
 .article-list:hover {
     background-color: rgba(9,139,84,.3);
 }
+.profile-title {
+    width: 100%;
+    height: auto;
+    border-top: 3px dotted #f1f1f1;
+    border-bottom: 3px dotted #f1f1f1;
+}
+.profile-title span {
+    display: block;
+    margin: auto;
+    font-family: 'Open Sans';
+    font-size: 1.5em;
+    text-align: center;
+}
+.author-profile {
+    width: 100%;
+    height: auto;
+}
+.author-profile .author-avatar {
+    float: left;
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.author-profile .author-avatar img.avatar {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: auto auto;
+    /**border: solid 1px #cccccc;**/
+    border-radius: 50px;
+}
+.author-profile .author-discription {
+    float: left;
+    width: 60%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.author-profile .author-discription p.author-name {
+    text-align: left;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.author-profile .author-discription p.author-comment {
+    text-align: left;
+    font-size: 0.8em;
+}
 /******************** style of index ********************/
 /******************** style of header ********************/
 #site_icon{

@@ -18,6 +18,22 @@
             'after' => '</li></ul></div>',
             'pagelink' => '<div class="nav-wrap"><span>%</span></div>'
         )); ?>
-
     </article>
+    <div class="profile-title">
+        <span>WRITER PROFILE</span>
+    </div>
+    <div class="author-profile">
+        <?php $authorID = get_the_author_id(); ?>
+        <div class="author-avatar">
+            <?php echo get_avatar($authorID, 96); ?>
+        </div>
+        <div class="author-discription">
+            <p class="author-name">
+                <?php echo get_the_author_meta('first_name')
+                . get_the_author_meta('last_name'); ?>
+            </p> 
+            <p class="author-comment">
+                <?php the_author_meta('description', get_the_author_id()); ?>
+            </p> 
+        </div>
 <?php endwhile; ?>
