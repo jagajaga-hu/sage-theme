@@ -1,7 +1,7 @@
 <header class="banner" style="margin-top: -22px">
   
   <div class="site-icon">
-  <a href="/wordpress" id="logo">
+  <a href="<?= home_url('/');?>" id="logo">
   <img src="<?php echo get_template_directory_uri(); ?>/icon.png" alt="" width="30" height="30">
   JagaJaga</a><h5 class="no-mobile">- 北大生応援メディア -</h5>
 

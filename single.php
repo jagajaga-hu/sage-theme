@@ -1,14 +1,14 @@
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
 <ul class="nav list">
-  <li class="active"><a href="/wordpress#tab0">ホーム</a></li>
+<li class="active"><a href="<?= home_url('/'); ?>#tab0">ホーム</a></li>
 <?php
     $args = array(
         'hide_empty' => 1,
     );
     $categories = get_categories($args);
     foreach($categories as $category){
-        echo '<li><a href="/wordpress#tab'.$category->cat_ID.'">';
+        echo '<li><a href="'.home_url('/').'#tab'.$category->cat_ID.'">';
         echo $category->name.'</a></li>';
     }
 ?>
