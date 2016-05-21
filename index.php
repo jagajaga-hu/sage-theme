@@ -18,8 +18,10 @@
     );
     $categories = get_categories($args);
     foreach($categories as $category){
-        echo '<li><a href="#tab'.$category->cat_ID.'" data-toggle="tab">';
-        echo $category->name.'</a></li>';
+        if($category->cat_ID!=1){
+            echo '<li><a href="#tab'.$category->cat_ID.'" data-toggle="tab">';
+            echo $category->name.'</a></li>';
+        }
     }
 ?>
 </ul>
@@ -55,7 +57,7 @@
                                 <div class="col-xs-9 col-sm-6 jstile-text">
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
-                                <?php the_advanced_excerpt(); ?>
+                                <?php /**the_advanced_excerpt();**/ ?>
                             </div>
                         </a>
                     </article>

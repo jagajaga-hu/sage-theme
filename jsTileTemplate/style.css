@@ -400,7 +400,7 @@ footer hr {
 /* .content-hidden .githubAnchor { float:left } */
 @media (max-width:1200px) {
 	.tl-tile-content h2 {
-		font-size:24px;
+		font-size:1.8em;
 	}	
 }
 @media (min-width:993px) and (max-width:1200px) {
