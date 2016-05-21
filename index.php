@@ -61,11 +61,11 @@
                                 <h2><?php the_title(); ?></h2>
                             <!-- ここから、記事本文抜粋 -->
                             <?php if($counter==0 && strlen(get_the_content())>200): ?>
-                                <?php echo mb_substr(strip_tags(get_the_content()), 0, 200); ?>
+                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 200); ?>
                             <?php elseif($counter==1 && strlen(get_the_content())>150): ?>
-                                <?php echo mb_substr(strip_tags(get_the_content()), 0, 150); ?>
+                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 150); ?>
                             <?php elseif(strlen(get_the_content())>60): ?>
-                                <?php echo mb_substr(strip_tags(get_the_content()), 0, 60); ?>
+                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 60); ?>
                             <?php else: ?>
                                 <?php the_excerpt(); ?>
                             <?php endif; ?>
