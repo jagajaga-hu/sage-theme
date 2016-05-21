@@ -41,7 +41,7 @@ body {
         background-size: cover;
     }
     .tl-tile-content h2 {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 768px) {
