@@ -17,6 +17,8 @@
     <?php endif; ?>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:site" content="@JagaJagaHU">
+    <meta name="twitter:card" content="summary_large_image">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"   integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/tab.js"></script>
