@@ -1,24 +1,33 @@
-<head prefix="og: http://ogp.me/ns#">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 記事ページの場合のメタデータ記述 -->
     <?php if( is_single() ): ?>
+    <meta name="description" content="<?php echo wp_trim_words( $post->post_content, 100, '...' ); ?>">
+    <?php if( has_tag() ): ?>
+        <?php $tags = get_the_tags();
+        $kwds = array();
+        foreach($tags as $tag) {
+            $kwds[] = $tag->name;
+        } ?>
+    <meta name="keywords" content="<?php echo implode( ',', $kwds ); ?>">
+    <?php endif; ?>
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
-    <meta property="og:url" content="<?php get_the_permalink(); ?>">
+    <meta property="og:url" content="<?php the_permalink(); ?>">
     <meta property="og:description" content="<?php echo wp_trim_words( $post->post_content, 100, '...' ); ?>">
         <?php if(has_post_thumbnail()): ?>
             <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'facebook'); ?> 
-    <meta property="og:image" content="<?php echo $postthumb[0]; ?>">
+    <meta property="og:image" content="http://jagajaga-hu.com/<?php echo $postthumb[0]; ?>">
         <?php else: ?>
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/icon.png">
         <?php endif; ?>
     <?php endif; ?>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:locale" content="ja_JP">
-    <meta name="twitter:site" content="@JagaJagaHU">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@JagaJagaHU">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"   integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/tab.js"></script>

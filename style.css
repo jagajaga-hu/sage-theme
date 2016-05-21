@@ -377,7 +377,9 @@ header input.search-field {
 }
 .drawer {
 	display: inline-block;
-	float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 	font-size: 15px;
 	line-height: 30px;
 }
@@ -463,6 +465,11 @@ header input.search-field {
 .jstile-text.col-sm-5 {
 	padding: 0 10px;
 }
+.dummy-image {
+    width: 100%;
+    height: 100%;
+
+}
 /*
 @media (min-width:1020px) and (max-width: 768px) {
     .jstile
@@ -487,6 +494,9 @@ h2.entry-title {
 .entry-content img {
     width: 100%;
     height: auto;
+    border: solid 2px #003e21;
+    outline: solid 2px #4cb468;
+    outline-offset: 2px;
 }
 .entry-content {
     line-height: 2em;
@@ -604,5 +614,53 @@ ul.wpp-list span {
     height: 100%;
     padding-top: 3px;
     padding-bottom: 3px;
+    vertical-align: middle;
+}
+/** about us **/
+.aboutus {
+    width: 100%;
+    height: auto;
+}
+.aboutus-img {
+    display: inline-block;
+    text-align: center;
+}
+.aboutus img {
+    width: 70%;
+    height: auto;
+}
+
+.wsbl_line {
+    width: 20px;
+    height: 20px;
+}
+.wp_social_bookmarking_light img {
+    border: none;
+    outline: none;
+}
+/** style of contact form **/
+.contact-form {
+    width: 100%;
+    text-align: center;
+}
+.contact-form .wpcf7-form-control {
+    width: 80%;
+}
+.entry-meta {
+    margin-top: 5px;
+}
+.entry-date {
+    display: inline-block;
+    vertical-align: middle;
+}
+.entry-category {
+    display: inline-block;
+    font-size: 0.7em;
+    height: 1.4em;
+    line-height: 1.4;
+    margin: 0 0 0 1em;
+    background: #4cb648;
+    border-radius: 5px;
+    color: #ffffff;
     vertical-align: middle;
 }

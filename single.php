@@ -8,8 +8,10 @@
     );
     $categories = get_categories($args);
     foreach($categories as $category){
-        echo '<li><a href="'.home_url('/').'#tab'.$category->cat_ID.'">';
-        echo $category->name.'</a></li>';
+        if( $category->cat_ID!=1 ){
+            echo '<li><a href="'.home_url('/').'#tab'.$category->cat_ID.'">';
+            echo $category->name.'</a></li>';
+        }
     }
 ?>
 </ul>

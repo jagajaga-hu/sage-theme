@@ -2,7 +2,7 @@
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 
-<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+<?php echo do_shortcode("[huge_it_slider id='2']"); ?>
 
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
@@ -80,8 +80,11 @@
                     </article>
                 </div>
             <?php $counter++; endwhile; endif; ?>
-            <?php for($i = $counter; $i<25; $i++): ?>
-                <div> Dummy! </div>
+            <?php for($i = 1; $i<=11-$counter; $i++): ?>
+                <div>
+                    <div class="dummy-image" style="background: url(http://jagajaga-hu.com/wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;">
+                    </div>
+                </div>
             <?php endfor; ?>
             </div>
         </div>
@@ -104,8 +107,10 @@
             </div>
             <div class="article-list-right">
                 <span class="date"><?php the_time('Y.m.d'); ?></span>
+                <?php /*
                 <span class="tag tag_awarded">殿堂入り</span>
                 <span class="tag tag_hot">HOT</span>
+                */ ?>
                 <h1><?php the_title(); ?></h1>
             </div>
         </div> 
