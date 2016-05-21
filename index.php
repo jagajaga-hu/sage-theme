@@ -61,7 +61,7 @@
                                 <h2><?php the_title(); ?></h2>
                             <!-- ここから、記事本文抜粋 -->
                             <?php if($counter==0): ?>
-                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 1, "…", "UTF-8"); ?>
+                                <?php echo mb_strimwidth(get_the_excerpt(), 0, 9, "…", "UTF-8"); ?>
                             <?php elseif($counter==1): ?>
                                 <?php echo mb_strimwidth(get_the_excerpt(), 0, 1, "…", "UTF-8"); ?>
                             <?php elseif($counter>4 || $counter==1): ?>
