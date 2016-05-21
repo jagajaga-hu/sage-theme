@@ -129,6 +129,15 @@ body {
     }
 }
 
+.home-date {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px
+}
+
 body {
     background-color: #ffffff;
 }

@@ -42,9 +42,11 @@
                             <?php if($counter>4 || $counter==1): ?>
                                 <div class="col-xs-3 col-sm-12 jstile-img">
                                     <img src="<?php echo $postthumb[0]; ?>" alt="">
+                                    <div class="home-date"><?php the_time('Y.m.d'); ?></div>
                             <?php else: ?>
                                 <div class="col-xs-3 col-sm-5 jstile-img">
                                     <img src="<?php echo $postthumb[0]; ?>" alt="">
+                                    <div class="home-date"><?php the_time('Y.m.d'); ?></div>
                             <?php endif; ?>
                             </div>
                             <?php if($counter==0): ?>
