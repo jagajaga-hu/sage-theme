@@ -43,17 +43,28 @@
                                 <div class="col-xs-3 col-sm-12 jstile-img">
                                     <img src="<?php echo $postthumb[0]; ?>" alt="">
                             <?php else: ?>
-                                <div class="col-xs-3 col-sm-6 jstile-img">
+                                <div class="col-xs-3 col-sm-5 jstile-img">
                                     <img src="<?php echo $postthumb[0]; ?>" alt="">
                             <?php endif; ?>
                             </div>
-                            <?php if($counter>4 || $counter==1): ?>
+                            <?php if($counter==0): ?>
+                                <div class="col-xs-9 col-sm-7 jstile-text top-article">
+                            <?php elseif($counter>4 || $counter==1): ?>
                                 <div class="col-xs-9 col-sm-12 jstile-text">
                             <?php else: ?>
-                                <div class="col-xs-9 col-sm-6 jstile-text">
+                                <div class="col-xs-9 col-sm-7 jstile-text">
                             <?php endif; ?>
                                 <h2><?php the_title(); ?></h2>
-                                <?php /**the_advanced_excerpt();**/ ?>
+                            <!-- ここから、記事本文抜粋 -->
+                            <?php if($counter==0 && strlen(get_the_content())>200): ?>
+                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 200); ?>
+                            <?php elseif($counter==1 && strlen(get_the_content())>150): ?>
+                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 150); ?>
+                            <?php elseif(strlen(get_the_content())>60): ?>
+                                <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 60); ?>
+                            <?php else: ?>
+                                <?php the_excerpt(); ?>
+                            <?php endif; ?>
                             </div>
                         </a>
                     </article>
@@ -104,6 +115,50 @@ $(function() {
 });
 jQuery('.article-list').click(function() {
     location.href = jQuery(this).attr('data-url');
+});
+</script>
+<script>
+//ダイレクトリンク
+$(function() {
+    //location.hashで#以下を取得 変数hashに格納
+    var hash = location.hash; 
+    console.log(hash); // OK
+
+    //hashの中に#tab～が存在するか調べる。
+    hash = (hash.match(/^#tab\d+$/) || [])[0];
+    console.log(hash); // OK
+    
+     //hashに要素が存在する場合、hashで取得した文字列（#tab2,#tab3等）から#より後を取得(tab2,tab3)    
+　　　　if($(hash).length){
+    var tabname = hash.slice(1) ;
+    console.log(tabname);
+    } else{
+　　　　// 要素が存在しなければtabnameにtab1を代入する
+　　　　var tabname = "tab0";}
+    //コンテンツを一度すべて非表示にし、
+    //$('.tab-content .tab-pane').css('display','none');
+
+    //一度タブについているクラスin activeを消し、
+    $('.tab-content div').removeClass('active in');
+    $('.nav-horizontal li').removeClass('active');
+
+    var tabno = $('div#' + tabname).index();
+    console.log(tabno);
+    
+    var elements = document.getElementsByClassName("tab-pane fade") ;
+    console.log(elements);
+    elements[tabno].className = 'tab-pane fade active in';
+    $('.nav-horizontal li').eq(tabno).addClass('active');
+
+    //クリックされたタブと同じ順番のコンテンツを表示します。
+    //$('.tab-content').eq(tabno).fadeIn();
+    //console.log($('.tab-content').eq(tabno).fadeIn());
+     
+    //クリックされたタブのみにクラスselectをつけます。
+    //$('.tab-content div').eq(tabno).addClass('active');
+    //$('.tab-content div').eq(tabno).addClass('in');
+    //var tabs = $('.tab-content div');
+    //console.log(tabs);
 });
 </script>
 

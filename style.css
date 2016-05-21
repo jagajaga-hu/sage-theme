@@ -40,6 +40,9 @@ body {
         background-position: center center;
         background-size: cover;
     }
+    .tl-tile-content h2 {
+        font-size: 15px;
+    }
 }
 @media screen and (min-width: 768px) {
 	header, footer {
@@ -71,6 +74,12 @@ body {
     }
     .no-pc {
         display: none;
+    }
+    .tl-tile-content h2 {
+        font-size: 18px;
+    }
+    .tl-tile-content .top-article h2 {
+        font-size: 26px;
     }
 }
 @media screen and (min-width: 992px) {
@@ -430,19 +439,16 @@ header input.search-field {
     font-size: 0.7em;
     overflow: auto;
 }
-.jstile-text h2 {
-    font-size: 0.8em;
-}
 .jstile-text a{
 	color: #000000;
 }
-.col-xs-3.col-sm-6.jstile-img img { /*jsTileの横長タイル内画像のスタイル*/
+.col-xs-3.col-sm-5.jstile-img img { /*jsTileの横長タイル内画像のスタイル*/
 	width: 100%;
 }
 .col-xs-3.col-sm-12.jstile-img img {
 	width: 100%;
 }
-.jstile-text.col-sm-6 {
+.jstile-text.col-sm-5 {
 	padding: 0 10px;
 }
 /*
