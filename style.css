@@ -386,6 +386,7 @@ header input.search-field {
 
 .drawer-hamburger {
 	position: relative;
+    z-index: 101;
 }
 
 .drawer-hamburger-icon {
@@ -397,6 +398,9 @@ header input.search-field {
 	margin-left: 5px;	
 }
 
+.drawer--top.drawer-open .drawer-nav {
+    z-index: 100;
+}
 /******************** style of bootstrap ********************/
 .container {
 	padding-left: 0;
