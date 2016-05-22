@@ -163,9 +163,9 @@ $(function() {
     var elements = document.getElementsByClassName("tab-pane fade") ;
     console.log(elements);
     elements[tabno].className = 'tab-pane fade active in';
-    if(tabno > 0){
+    /*if(tabno > 0){
         tabno = tabno - 1; //これは応急処置だから、後でちゃんと直す
-    }
+    }*/
     $('.nav-horizontal li').eq(tabno).addClass('active');
 
     //クリックされたタブと同じ順番のコンテンツを表示します。

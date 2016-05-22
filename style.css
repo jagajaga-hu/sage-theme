@@ -442,11 +442,22 @@ header input.search-field {
 	margin: 50px 0 30px;
 }
 
+.sidebar-primary .main {
+    padding: 0;
+}
+
 /******************** style of tab menu ********************/
 .disnon {
     display: none;
 }
 
+.single-page-nav {
+    border-bottom: solid 1px #003e21;
+}
+
+.single-page-tab:active {
+    border-bottom: solid 3px #003e21;
+}
 /******************** style in tile ********************/
 .fixed {
     position: fixed;
@@ -490,9 +501,14 @@ header input.search-field {
 
 
 /******************** style of article ********************/
+.article-in-single-page {
+    padding: 0 15px;
+}
 
 h2.entry-title {
     font-size: 1.3em;
+    font-weight: bold;
+    padding: 20px 0;
 }
 
 .entry-content img {
@@ -624,6 +640,7 @@ ul.wpp-list span {
 .aboutus {
     width: 100%;
     height: auto;
+    padding: 0 15px;
 }
 .aboutus-img {
     display: inline-block;
