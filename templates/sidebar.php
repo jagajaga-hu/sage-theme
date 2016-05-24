@@ -1,7 +1,7 @@
-
 <?php /** GUI からのウィジェットは入れない! 
 dynamic_sidebar('sidebar-primary'); **/ ?>
 
+<div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- jagajaga-top -->
 <ins class="adsbygoogle"
@@ -12,6 +12,7 @@ dynamic_sidebar('sidebar-primary'); **/ ?>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+</div>
 
 <div class="wpp-article">
     <span class="weeklyranking">

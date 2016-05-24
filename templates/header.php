@@ -16,7 +16,7 @@
     <ul class="drawer-menu">
       <!-- ドロワーメニューの中身 -->
       <li><a href="/wordpress/about/">JagaJagaについて</a></li>
-      <li><a href="/wordpress/contact/">お問い合わせ</a></li>
+      <li><a href="/wordpress/contact/">お問い合わせ／ライター募集</a></li>
     </ul>
   </nav>
   </div>
@@ -25,7 +25,7 @@
   <!-- ここから、デバイス幅が768px以上なら、右上にメニュー表示 -->
   <ul class="only-pc-top-right-menu">
     <!-- ドロワーメニューの中身 -->
-    <li><a href="/wordpress/contact/">お問い合わせ</a></li>
+    <li><a href="/wordpress/contact/">お問い合わせ／ライター募集</a></li>
     <li><a href="/wordpress/about/">JagaJagaについて</a></li>
   </ul>
   <!-- ここまで、デバイス幅が768px以上なら、右上にメニュー表示 -->
@@ -33,4 +33,3 @@
   </div>
 
 </header>
-

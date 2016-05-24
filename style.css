@@ -41,8 +41,9 @@ body {
         background-size: cover;
     }
     .tl-tile-content h2 {
-        font-size: 20px;
+        font-size: 5vw;
     }
+
 }
 @media screen and (min-width: 768px) {
 	header, footer {
@@ -511,6 +512,20 @@ h2.entry-title {
     padding: 20px 0;
 }
 
+.entry-content figure {
+    width: 100% !important;
+    height: auto;
+    border: solid 2px #003e21;
+    outline: solid 2px #4cb468;
+    outline-offset: 2px;
+}
+
+.entry-content figure img {
+    border: none;
+    outline: none;
+    outline-offset: none;
+}
+
 .entry-content img {
     width: 100%;
     height: auto;
@@ -603,6 +618,7 @@ ul.wpp-list span {
     
 }
 .wpp-article {
+    display: block;
     width: 100%;
     height: auto;
     border-top: 3px dotted #f1f1f1;
