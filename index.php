@@ -2,7 +2,7 @@
 <?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 
-<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+<?php echo do_shortcode("[huge_it_slider id='2']"); ?>
 
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
@@ -118,20 +118,6 @@
     </div>
     <?php endforeach; ?>
 </div>
-<script>
-$(function() {
-        var w = $(window).width();
-        var x = 800;
-        if (w <= x) {
-            $('#sample').css({
-                color: 'red'
-            });
-        }
-});
-jQuery('.article-list').click(function() {
-    location.href = jQuery(this).attr('data-url');
-});
-</script>
 <script>
 //ダイレクトリンク
 $(function() {

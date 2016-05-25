@@ -4,7 +4,7 @@ dynamic_sidebar('sidebar-primary'); **/ ?>
 <div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- jagajaga-top -->
-<ins class="adsbygoogle"
+<ins class="adsbygoogle adsense"
      style="display:block"
      data-ad-client="ca-pub-3573519413191427"
      data-ad-slot="7250886990"
