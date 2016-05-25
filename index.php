@@ -82,7 +82,8 @@
             <?php $counter++; endwhile; endif; ?>
             <?php for($i = 1; $i<=11-$counter; $i++): ?>
                 <div>
-                    <div class="dummy-image" style="background: url(http://jagajaga-hu.com/wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;">
+                    <!--div class="dummy-image" style="background: url(http://jagajaga-hu.com/wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;" -->
+                    <div class="dummy-image" style="background: url(wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;">
                     </div>
                 </div>
             <?php endfor; ?>
@@ -100,18 +101,19 @@
     foreach($category_posts as $post): setup_postdata($post);
     $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium');
     ?>
-        <div class="article-list" data-url="<?php the_permalink(); ?>">
- 
-            <div class="article-list-left">
-                <img src="<?php echo $postthumb[0]; ?>" alt="">
-            </div>
+        <div class="article-list">
+			<div class="article-list-left">
+					<img src="<?php echo $postthumb[0]; ?>" alt="">
+			</div>
             <div class="article-list-right">
                 <span class="date"><?php the_time('Y.m.d'); ?></span>
                 <?php /*
                 <span class="tag tag_awarded">殿堂入り</span>
                 <span class="tag tag_hot">HOT</span>
                 */ ?>
-                <h1><?php the_title(); ?></h1>
+				<a href="<?php the_permalink(); ?>">
+					<h1><?php the_title(); ?></h1>
+				</a>
             </div>
         </div> 
     <?php endforeach; ?>
