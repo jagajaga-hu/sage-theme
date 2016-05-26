@@ -27,7 +27,7 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="JagaJaga -北大生応援メディア-">
 	<meta property="og:description" content="北大発のオンラインメディア。魅力的な北大生や北大の団体、イベント等の情報を発信。">
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/icon.png">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/aboutus.png">
     <?php endif; ?>
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
     <meta property="og:locale" content="ja_JP">
