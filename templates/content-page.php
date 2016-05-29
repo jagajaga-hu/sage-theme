@@ -1,6 +1,6 @@
 <div class="aboutus">
     <div class="aboutus-img">
-        <img src="http://jagajaga-hu.com/wp-content/uploads/2016/05/aboutus.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/aboutus.png">
     </div>
     <?php the_content(); ?>
 </div>
