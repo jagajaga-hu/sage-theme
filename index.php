@@ -1,8 +1,6 @@
-<!-- 人気記事スライダー -->
-<?php //echo do_shortcode('[advps-slideshow optset="1"]'); ?>
 
 
-<?php echo do_shortcode("[huge_it_slider id='2']"); ?>
+<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
 
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
