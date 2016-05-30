@@ -32,14 +32,6 @@ body {
 	.only-pc-top-right-menu {
 		display: none;
 	}
-    #garally {
-        position: relative;
-        width: 100%;
-        height: 200px;
-        background-image: url(http://52.11.116.50/wp-content/uploads/2016/05/lavender.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
     .tl-tile-content h2 {
         font-size: 5vw;
     }
@@ -65,14 +57,6 @@ body {
 		display: inline-block;
 		float: right;
 	}
-    #garally {
-        position: relative;
-        width: 750px;
-        height: 300px;
-        background-image: url(http://52.11.116.50/wp-content/uploads/2016/05/lavender.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
     .no-pc {
         display: none;
     }
@@ -106,25 +90,6 @@ body {
 		display: inline-block;
 		float: right;
 	}
-    #garally {
-        position: relative;
-        width: 970px;
-        height: 400px;
-        background-image: url(http://52.11.116.50/wp-content/uploads/2016/05/lavender.jpg);
-        background-position: center center;
-        background-size: cover;
-    }
-    #garally #garally-caption {
-        background: rgba(255, 255, 255, .4);
-        font-family: harenosora;
-        color: #050505;
-        font-size: 40px;
-        text-align: right;
-        padding: 5px;
-        position: absolute;
-        top: 60%;
-        width: 100%;
-    }
     .no-pc {
         display: none;
     }
@@ -366,6 +331,7 @@ header {
 	color: #003E21;
 }
 
+
 header h2 {
 	text-align: center;
 	margin-bottom: 0;
@@ -443,14 +409,27 @@ header input.search-field {
 	text-align: center;
 }
 /******************** 記事で使う見出しのスタイル ********************/
+.post h3:before { /* 記事内の H3 が対象になる */
+	content: "";
+	display: block;
+	position: absolute;
+	vertical-align: middle;
+	width: 2em;
+	height: 2em;
+	left: -1em;
+	top: 0.5em;
+	border-radius: 1em;
+	background: #003e21;
+}
 .post h3 { /* 記事内の H3 が対象になる */
-	border-style: solid;
-	border-color: #004400;
-	border-width: 0 0 1px 8px;
-	padding: 10px 0 10px 10px;
-	font-weight: bold;
-	font-size: 120%;
-	margin: 50px 0 30px;
+	position: relative;
+	font-size: 1.2em;
+	padding: 1em 0 1em 2em;
+	margin: 2em 0 0 0;
+	min-height: 3em;
+	line-height: 1em;
+	vertical-align: middle;
+	overflow: hidden;
 }
 
 .sidebar-primary .main {
@@ -516,47 +495,95 @@ header input.search-field {
     padding: 0 15px;
 }
 
-h2.entry-title {
-    font-size: 1.3em;
-    font-weight: bold;
-    padding: 20px 0;
+h2.entry-title:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 0.5em;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: -webkit-gradient(linear, left top, right top, from(#003e21), to(#ffffff));
+	background: -webkit-linear-gradient(left, #003e21 30%);
+	background: -moz-linear-gradient(left, #003e21 30%);
+	background: -o-linear-gradient(left, #003e21 30%);
+	background: -ms-linear-gradient(left, #003e21 30%);
+	background: linear-gradient(to left, #003e21 30%);
 }
-
+h2.entry-title {
+	position: relative;
+    font-size: 1.3em;
+    padding: .5em 0 .5em 1.5em;
+	margin: 0.5em 0 0.5em 0;
+	line-height: 1.2em;
+	border-radius: 0.7em;
+}
+.entry-content {
+	font-size: 1em;
+    line-height: 1.75em;
+}
+@media (max-width: 767px) {
+	.entry-content {
+		font-size: 0.9em;
+		line-height: 2em;
+	}
+}
 .entry-content figure {
     width: 100% !important;
     height: auto;
-    border: solid 2px #003e21;
-    outline: solid 2px #4cb468;
-    outline-offset: 2px;
+	margin: 2em 0;
+	border: none;
 }
 
 .entry-content figure img {
     border: none;
-    outline: none;
-    outline-offset: none;
+	margin: 0;
 }
-
+.entry-content figure figcaption {
+	font-size: 0.8em;
+	padding: 0;
+	padding-top: 0.5em;
+}
+.entry-content figure figcaption:before {
+	content: "▼";
+	margin-right: 0.5em;
+}
 .entry-content img {
     width: 100%;
     height: auto;
-    border: solid 2px #003e21;
-    outline: solid 2px #4cb468;
-    outline-offset: 2px;
-}
-.entry-content {
-    line-height: 2em;
+	margin: 2em 0;
 }
 .entry-content > p {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 .entry-content iframe {
 	width: 100%;
 }
-/**
-@media screen and (min-width: 768px) {
+.entry-content ol {
+	counter-reset: number;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-**/
+.entry-content ol li {
+	position: relative;
+	vertical-align: middle;
+	padding-left: 2em;
+}
+.entry-content ol li:before {
+	position: absolute;
+	display: block;
+	counter-increment: number;
+	content: counter(number);
+	color: #ffffff;
+    background: #003e21;
+	height: 1.2em;
+	width: 1.2em;
+	border-radius: 0.6em;
+	left: 0;
+	vertical-align: middle;
+	text-align: center;
+}
 /******************** style of copyright ********************/
 
 /******************** style of copyright ********************/
@@ -588,14 +615,14 @@ h2.entry-title {
     margin: 0 10px;
     width: 50px;
     height: 50px;
-    color: #4cb468;
-    border: solid 2px #4cb468;
+    color: #003e21;
+    border: solid 2px #003e21;
     border-radius: 25px;
 
 }
 .page-navigation li a div.nav-wrap {
     color: #ffffff;
-    background-color: #4cb468;
+    background-color: #003e21;
 }
 .page-navigation li div span {
     display: inline-block;
@@ -692,7 +719,7 @@ ul.wpp-list span {
     height: auto;
 }
 
-.wp_social_bookmarking_light div.wsbl_line {
+.wp_social_bookmarking_light div {
 	height: 30px;
 	width: auto;
 }
@@ -701,6 +728,7 @@ ul.wpp-list span {
 	width: auto;
     border: none;
     border-width: 0;
+	margin: 0;
     outline: none;
 }
 /** style of contact form **/

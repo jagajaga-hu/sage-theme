@@ -432,6 +432,6 @@ footer hr {
 		background-color: rgba(0,0,0,0.8);
 	}
 	.content-hidden .githubAnchor { float:left }
-	p { font-size:1.1em }
+	/* p { font-size:1.1em } */
 	code { font-size:1em }
 }
