@@ -37,8 +37,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-  add_image_size('homethumbnail', 800, 600, true);
-  add_image_size('homethumbnail_mobile', 500, 600, true);
+  add_image_size('homethumbnail', 320, 240, true);
+  add_image_size('homethumbnail_mobile', 200, 200, true);
   add_image_size('facebook', 1200, 630, true);
   add_filter('jpeg_quality', function($arg){return 100;});
 
