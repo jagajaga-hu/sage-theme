@@ -15,7 +15,7 @@
 		<?php endif; ?>
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
-    <meta property="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:url" content="http://hu-jagajaga.com<?php the_permalink(); ?>">
     <meta property="og:description" content="<?php echo wp_trim_words( $post->post_content, 100, '...' ); ?>">
         <?php if(has_post_thumbnail()): ?>
             <?php $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'facebook'); ?> 
