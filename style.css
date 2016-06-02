@@ -281,6 +281,11 @@ article footer nav ul a li {
     width: 100%;
     height: auto;
 }
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 .author-profile .author-avatar {
     float: left;
     width: 40%;
@@ -303,6 +308,7 @@ article footer nav ul a li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .author-profile .author-discription p.author-name {
     text-align: left;
     font-size: 1.0em;
@@ -664,6 +670,7 @@ ul.wpp-list span {
     border-top: 3px dotted #f1f1f1;
 }
 .wpp-article span.weeklyranking {
+    margin-top: 20px;
     display: block;
     margin: auto;    
     font-family: 'Open Sans';

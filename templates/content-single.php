@@ -22,7 +22,7 @@
     <div class="profile-title">
         <span>WRITER PROFILE</span>
     </div>
-    <div class="author-profile">
+    <div class="author-profile clearfix">
         <?php $authorID = get_the_author_id(); ?>
         <div class="author-avatar">
             <?php echo get_avatar($authorID, 96); ?>
@@ -36,4 +36,5 @@
                 <?php the_author_meta('description', get_the_author_id()); ?>
             </p> 
         </div>
+    </div>
 <?php endwhile; ?>

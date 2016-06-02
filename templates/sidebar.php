@@ -1,19 +1,6 @@
 <?php /** GUI からのウィジェットは入れない! 
 dynamic_sidebar('sidebar-primary'); **/ ?>
 
-<div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- jagajaga-top -->
-<ins class="adsbygoogle adsense"
-     style="display:block"
-     data-ad-client="ca-pub-3573519413191427"
-     data-ad-slot="7250886990"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-
 <div class="wpp-article">
     <span class="weeklyranking">
         Weekly Ranking
@@ -34,3 +21,16 @@ $wpp = array (
 ); ?>
 
 <?php wpp_get_mostpopular($wpp); ?>
+
+<div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- jagajaga-top -->
+<ins class="adsbygoogle adsense"
+     style="display:block"
+     data-ad-client="ca-pub-3573519413191427"
+     data-ad-slot="7250886990"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
