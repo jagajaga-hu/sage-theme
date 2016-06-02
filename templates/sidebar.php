@@ -8,11 +8,13 @@ dynamic_sidebar('sidebar-primary'); **/ ?>
         Weekly Ranking
     </span>
 </div>
-    
+
+<?php $limit_num = (wp_is_mobile()) ? 3 : 5; ?>
+
 <?php
 $wpp = array (
     'range' => 'weekly', /*集計期間の設定（daily,weekly,monthly）*/
-    'limit' => 5, /*表示数はmax5記事*/
+    'limit' => $limit_num, /*表示数はmax5記事*/
     'post_type' => 'post', /*投稿のみ指定（固定ページを除外）*/
     'title_length' => '35', /*タイトル文字数上限*/
     'stats_comments' => '0', /*コメント数は非表示*/
@@ -35,7 +37,7 @@ $wpp = array (
 <?php
 $wpp = array (
     'range' => 'daily', /*集計期間の設定（daily,weekly,monthly）*/
-    'limit' => 5, /*表示数はmax5記事*/
+    'limit' => $limit_num, /*表示数はmax5記事*/
     'post_type' => 'post', /*投稿のみ指定（固定ページを除外）*/
     'title_length' => '35', /*タイトル文字数上限*/
     'stats_comments' => '0', /*コメント数は非表示*/
