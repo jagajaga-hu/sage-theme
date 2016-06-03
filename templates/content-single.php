@@ -8,6 +8,7 @@
             <img class="col-xs-12" src="<?php echo $postthumb[0]; ?>" alt="">
         </div>
         <?php endif; ?>
+		<?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
         <div class="entry-content">
             <?php the_content(); ?>
         </div>
@@ -18,6 +19,7 @@
             'after' => '</li></ul></div>',
             'pagelink' => '<div class="nav-wrap"><span>%</span></div>'
         )); ?>
+		<?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>
     </article>
     <div class="profile-title">
         <span>WRITER PROFILE</span>
