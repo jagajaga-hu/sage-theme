@@ -333,6 +333,13 @@ header {
     margin-bottom: 5px;
 }
 
+header a:link,
+header a:visited,
+header a:hover,
+header a:active {
+	text-decoration: none;
+}
+
 #logo {
 	color: #003E21;
 }
@@ -603,6 +610,12 @@ h2.entry-title {
     margin: 40px 0 30px;
     text-align: center;
 }
+.page-navigation a:link,
+.page-navigation a:visited,
+.page-navigation a:hover,
+.page-navigation a:active {
+	text-decoration: none;
+}
 .page-navigation ul {
     display: inline-block;
     margin: 0;
@@ -614,7 +627,12 @@ h2.entry-title {
     float: left;
     width: auto;
 }
-
+.page-navigation li a:link,
+.page-navigation li a:visited,
+.page-navigation li a:hover,
+.page-navigation li a:active {
+	background-color: none;
+}
 .page-navigation li div.nav-wrap {
     display: inline-block;
     position: relative;
@@ -624,7 +642,13 @@ h2.entry-title {
     color: #003e21;
     border: solid 2px #003e21;
     border-radius: 25px;
-
+}
+.page-navigation li a {
+	width: auto;
+	height: auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 .page-navigation li a div.nav-wrap {
     color: #ffffff;
@@ -646,9 +670,6 @@ h2.entry-title {
     text-decoration: none;
 }
 
-.page-navigation li a:hover {
-    background-color: #eeeeee;
-}
 .page-navigation ul:after {
     content: "";
     display: block;
