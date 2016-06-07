@@ -78,7 +78,7 @@
                     </article>
                 </div>
             <?php $counter++; endwhile; endif; ?>
-            <?php for($i = 1; $i<=11-$counter; $i++): ?>
+            <?php for($i = 1; $i<=15-$counter; $i++): ?>
                 <div>
                     <!--div class="dummy-image" style="background: url(http://jagajaga-hu.com/wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;" -->
                     <div class="dummy-image" style="background: url(wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;">
