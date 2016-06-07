@@ -7,14 +7,14 @@ $(document).ready(function() {
     if (w <= x) {
 		var myPCTemplate = {
 			tempD: {
-				tilesNum: 15,
+				tilesNum: 19,
 			}
 		};    	
     }
     else {
 		var myPCTemplate = {
 			tempD: {
-				tilesNum: 15,
+				tilesNum: 19,
 				columns: {
 					0: {
 						colClass: 'tl-col col-xs-12 col-sm-9 col-md-9',
@@ -43,6 +43,10 @@ $(document).ready(function() {
 					12: 'col-xs-12 col-sm-4 col-md-3',
 					13: 'col-xs-12 col-sm-4 col-md-3',
 					14: 'col-xs-12 col-sm-4 col-md-3',
+					15: 'col-xs-12 col-sm-4 col-md-3',
+					16: 'col-xs-12 col-sm-4 col-md-3',
+					17: 'col-xs-12 col-sm-4 col-md-3',
+					18: 'col-xs-12 col-sm-4 col-md-3',
 				},
 				animations: {
 					0: { tlClass:'tl-scale', tlClassF:'tl-scale-up', tlDelay:50},
@@ -60,6 +64,10 @@ $(document).ready(function() {
 					12: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
 					13: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
 					14: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
+					15: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
+					16: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
+					17: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
+					18: { tlClass:'tl-slide-up', tlClassF:'tl-slide-up-f', tlDelay:200},
 				},
 				config: {
 					0: { ratio: '0.3'},
@@ -77,6 +85,10 @@ $(document).ready(function() {
 					12: { ratio: '1.5'},
 					13: { ratio: '1.5'},
 					14: { ratio: '1.5'},
+					15: { ratio: '1.5'},
+					16: { ratio: '1.5'},
+					17: { ratio: '1.5'},
+					18: { ratio: '1.5'},
 				}
 			}
 		};    	
