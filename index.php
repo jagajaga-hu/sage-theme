@@ -92,6 +92,7 @@
     <?php foreach($categories as $category): ?>
     <div class="tab-pane fade" id="tab<?php echo $category->cat_ID; ?>">
     <?php $args = array(
+		'posts_per_page' => 15,
         'category' => $category->cat_ID,
         'orderby' => 'date'
     );
