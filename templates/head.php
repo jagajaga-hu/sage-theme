@@ -12,7 +12,10 @@
 				$kwds[] = $tag->name;
 			} ?>
     <meta name="keywords" content="<?php echo implode( ',', $kwds ); ?>">
-		<?php endif; ?>
+	<?php else: ?>
+    <meta name="description" content="北海道が、いまアツイ。北の大地で蠢めく芋よ。一皮剥けてもいんじゃない？5分で大志を拾い読み。">
+    <meta name="keywords" content="JagaJaga,jagajaga,北大,北海道">
+	<?php endif; ?>
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
     <meta property="og:url" content="http://hu-jagajaga.com<?php the_permalink(); ?>">

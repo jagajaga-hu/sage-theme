@@ -15,8 +15,8 @@
   <nav class="drawer-nav">
     <ul class="drawer-menu">
       <!-- ドロワーメニューの中身 -->
-      <li><a href="/about/">JagaJagaについて</a></li>
-      <li><a href="/contact/">お問い合わせ／ライター募集</a></li>
+      <li><a href="http://hu-jagajaga.com/about/">JagaJagaについて</a></li>
+      <li><a href="http://hu-jagajaga.com/contact/">お問い合わせ／ライター募集</a></li>
     </ul>
   </nav>
   </div>
