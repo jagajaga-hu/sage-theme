@@ -5,16 +5,13 @@
     <!-- 記事ページの場合のメタデータ記述 -->
     <?php if( is_single() ): ?>
     <meta name="description" content="<?php echo wp_trim_words( $post->post_content, 100, '...' ); ?>">
-		<?php if( has_tag() ): ?>
-			<?php $tags = get_the_tags();
-			$kwds = array();
-			foreach($tags as $tag) {
-				$kwds[] = $tag->name;
-			} ?>
-    <meta name="keywords" content="<?php echo implode( ',', $kwds ); ?>">
-	<?php else: ?>
-    <meta name="description" content="北海道が、いまアツイ。北の大地で蠢めく芋よ。一皮剥けてもいんじゃない？5分で大志を拾い読み。">
-    <meta name="keywords" content="JagaJaga,jagajaga,北大,北海道">
+	<?php if( has_tag() ): ?>
+		<?php $tags = get_the_tags();
+		$kwds = array();
+		foreach($tags as $tag) {
+			$kwds[] = $tag->name;
+		} ?>
+	<meta name="keywords" content="<?php echo implode( ',', $kwds ); ?>">
 	<?php endif; ?>
     <meta property="og:type" content="article">
     <meta property="og:title" content="<?php the_title(); ?>">
@@ -27,6 +24,8 @@
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/icon.png">
         <?php endif; ?>
 	<?php else: ?>
+    <meta name="description" content="北海道が、いまアツイ。北の大地で蠢めく芋よ。一皮剥けてもいんじゃない？5分で大志を拾い読み。">
+    <meta name="keywords" content="JagaJaga,jagajaga,北大,北海道">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="JagaJaga -北大生応援メディア-">
 	<meta property="og:description" content="北大発のオンラインメディア。魅力的な北大生や北大の団体、イベント等の情報を発信。">
