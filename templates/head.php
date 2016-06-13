@@ -25,7 +25,7 @@
         <?php endif; ?>
 	<?php else: ?>
     <meta name="description" content="北海道が、いまアツイ。北の大地で蠢めく芋よ。一皮剥けてもいんじゃない？5分で大志を拾い読み。">
-    <meta name="keywords" content="JagaJaga,jagajaga,北大,北海道">
+    <meta name="keywords" content="JagaJaga,北大">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="JagaJaga -北大生応援メディア-">
 	<meta property="og:description" content="北大発のオンラインメディア。魅力的な北大生や北大の団体、イベント等の情報を発信。">
