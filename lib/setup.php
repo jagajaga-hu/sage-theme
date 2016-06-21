@@ -139,11 +139,3 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
-
-if (current_user_can(‘contributor’) && !current_user_can(‘upload_files’)) {
-	add_action(‘admin_init’, ‘allow_contributor_uploads’);
-}
-function allow_contributor_uploads() {
-	$contributor = get_role(‘contributor’);
-	$contributor->add_cap(‘upload_files’);
-}
