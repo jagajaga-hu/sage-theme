@@ -21,12 +21,20 @@
   </nav>
   </div>
   <!-- ここまで、ドロワーメニュー（これを動かすためのjQueryはfooter.phpで読み込む） -->
-
+  <div class="formal-link">
+    <a href="https://www.facebook.com/JagaJaga.HU/" target="_blank">
+	  <img src="<?php echo get_template_directory_uri(); ?>/img/logo-facebook_185.png" alt="" width="30" height="30"></a>
+    <a href="https://twitter.com/jagajagahu/" target="_blank">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/logo-twitter_185.png" alt="" width="30" height="30"></a>
+  </div>
   <!-- ここから、デバイス幅が768px以上なら、右上にメニュー表示 -->
   <ul class="only-pc-top-right-menu">
-    <!-- ドロワーメニューの中身 -->
-    <li><a href="/about/">JagaJagaについて</a></li>
-    <li><a href="/contact/">お問い合わせ／ライター募集</a></li>
+    <li><a href="/about/"><h5>JagaJagaについて</h5></a></li>
+    <li><a href="/contact/"><h5>お問い合わせ／ライター募集</h5></a></li>
+	<li><a href="https://twitter.com/jagajagahu/" target="_blank">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo-twitter_185.png" alt="" width="30" height="30"></a></li>
+	<li><a href="https://www.facebook.com/JagaJaga.HU/" target="_blank">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/logo-facebook_185.png" alt="" width="30" height="30"></a></li>
   </ul>
   <!-- ここまで、デバイス幅が768px以上なら、右上にメニュー表示 -->
 

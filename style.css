@@ -44,7 +44,7 @@ body {
 		margin-right: auto;
 	}
     header ul {
-        margin-top: 17px;
+        margin-top: 9px;
         list-style: none;
         vertical-align: middle;
     }
@@ -52,6 +52,9 @@ body {
         margin-left: 8px;
         float: right;
         font-size: 14px;
+    }
+    .top-right-text {
+        padding-top: 5px;
     }
 	.only-pc-top-right-menu {
 		display: inline-block;
@@ -76,23 +79,6 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 	}
-    header ul {
-        margin-top: 17px;
-        list-style: none;
-        vertical-align: middle;
-    }
-    header ul li {
-        margin-left: 8px;
-        float: right;
-        font-size: 14px;
-    }
-	.only-pc-top-right-menu {
-		display: inline-block;
-		float: right;
-	}
-    .no-pc {
-        display: none;
-    }
 }
 
 .home-date {
@@ -390,6 +376,20 @@ header input.search-field {
 
 .drawer--top.drawer-open .drawer-nav {
     z-index: 100;
+}
+@media (max-width: 767px) {
+	.formal-link {
+		display: inline-block;
+		position: absolute;
+		top: 4px;
+		right: 40px;
+		line-height: 30px;
+	}
+}
+@media (min-width: 768px) {
+	.formal-link {
+		display: none;
+	}
 }
 /******************** style of bootstrap ********************/
 .container {

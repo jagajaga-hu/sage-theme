@@ -39,6 +39,7 @@ function setup() {
   add_theme_support('post-thumbnails');
   add_image_size('homethumbnail', 320, 240, true);
   add_image_size('homethumbnail_mobile', 200, 200, true);
+  add_image_size('huge-it-slider', 970, 500, true);
   add_image_size('facebook', 1200, 630, true);
   add_filter('jpeg_quality', function($arg){return 100;});
 
