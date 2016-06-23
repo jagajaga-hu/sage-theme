@@ -1,6 +1,6 @@
 
 
-<?php echo do_shortcode("[huge_it_slider id='5']"); ?>
+<?php echo do_shortcode("[huge_it_slider id='2']"); ?>
 
 <nav class="nav-horizontal" id="global-nav">
 <div class="mask">
