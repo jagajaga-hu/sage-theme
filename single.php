@@ -1,4 +1,4 @@
-<nav class="nav-horizontal single-page-nav" id="global-nav">
+<nav class="no-mobile nav-horizontal single-page-nav" id="global-nav">
 <div class="mask">
 <ul class="nav list">
 <li class="single-page-tab"><a href="<?= home_url('/'); ?>#tab0">ホーム</a></li>

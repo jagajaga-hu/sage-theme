@@ -307,6 +307,19 @@ article footer nav ul a li {
 }
 /******************** style of index ********************/
 /******************** style of header ********************/
+@media (max-width: 767px) {
+	.header-size{
+		width: 100%;
+		position: fixed;
+		z-index: 1100;
+	}
+}
+@media (min-width: 768px) {
+	.header-size{
+		position: relative;
+	}
+}
+
 #site_icon{
     background-repeat: no-repeat;
 }
@@ -359,7 +372,27 @@ header input.search-field {
 	font-size: 15px;
 	line-height: 30px;
 }
-
+@media (max-width: 767px) {
+	.drawer-page {
+		display: inline-block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+		font-size: 15px;
+		line-height: 30px;
+	}
+}
+@media (min-width: 768px) {
+	.drawer-page {
+		display: inline-block;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+		font-size: 15px;
+		line-height: 30px;
+	}
+}
+	
 .drawer-hamburger {
 	position: relative;
     z-index: 101;
@@ -459,7 +492,6 @@ header input.search-field {
 }
 
 .single-page-tab:active {
-    border-bottom: solid 3px #003e21;
 }
 /******************** style in tile ********************/
 .fixed {
@@ -506,6 +538,7 @@ header input.search-field {
 /******************** style of article ********************/
 .article-in-single-page {
     padding: 0 15px;
+	padding-top: 50px;
 }
 
 h2.entry-title:before {
