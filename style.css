@@ -1,5 +1,5 @@
 /*
-Theme Name:         JagaJaga
+Theme Name:         Dev JagaJaga
 Theme URI:          https://roots.io/sage/
 Description:        Sage is a WordPress starter theme. <a href="https://github.com/roots/sage">Contribute on GitHub</a>
 Version:            8.4.2
@@ -10,6 +10,29 @@ Text Domain:        sage
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
+
+div.nextpage {
+	width: 100%;
+	position: relative;
+	background-color: #003e21;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 6em;
+	color: #ffffff;
+	line-height: 1.8em;
+	text-align: center;
+}
+div.nextpage:before {
+	content: "》次ページ";
+	position: absolute;
+	top: 50%;
+	left: 1em;
+	margin-top: -0.5em;
+	line-height: 1em;
+	vertical-align: middle;
+}
+
+
 
 /******************** style of body ********************/
 body {
@@ -629,6 +652,62 @@ h2.entry-title {
 	left: 0;
 	vertical-align: middle;
 	text-align: center;
+}
+.arrow {
+	position: relative;
+	/*display: inline-block;*/
+	padding: 0 0 0 26px;
+	/*color: #000;*/
+	/*vertical-align: middle;*/
+	/*text-decoration: none;*/
+	font-size: 22px;
+}
+.arrow::before,
+.arrow::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+.arrow-icon::before {
+	left: 2px;
+	width: 15px;
+	height: 3px;
+	background: #003e21;
+}
+.arrow-icon::after {
+	top: 0;
+	left: 5px;
+	width: 12px;
+	height: 12px;
+	border-top: 3px solid #003e21;
+	border-right: 3px solid #003e21;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.to-top-link {
+	margin: 20px 0 20px 0;
+}
+@media (max-width:768px) {
+	.to-top-link {
+		text-align: center;
+	}
+	.to-top-link:active {
+		/*background-color: #003e21;*/
+	}
+	.arrow-icon:active:before {
+		/*background: #fff;*/
+	}
+	.arrow-icon:active:after {
+	/*border-top: 3px solid #fff;
+	border-right: 3px solid #fff;*/
+	}
+	.arrow:active {
+		/*color: #fff;*/
+	}
 }
 /******************** style of copyright ********************/
 

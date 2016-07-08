@@ -39,4 +39,16 @@
             </p> 
         </div>
     </div>
+	<div class="to-top-link">
+		<a href="<?=home_url('/');?>" class="arrow arrow-icon">JagaJagaトップへ</a>
+	</div>
 <?php endwhile; ?>
+
+<!--<style>
+@media (max-width: 767px) {
+	div.to-top-link a:active {
+		color: #ffffff !important;
+	}
+}
+</style>-->
+
