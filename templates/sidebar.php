@@ -49,6 +49,8 @@ $wpp = array (
 
 <?php wpp_get_mostpopular($wpp); ?>
 
+<?php hot_post(5); ?>
+
 <div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- jagajaga-top -->

@@ -41,6 +41,7 @@ function setup() {
   add_image_size('homethumbnail_mobile', 200, 200, true);
   add_image_size('huge-it-slider', 970, 500, true);
   add_image_size('facebook', 1200, 630, true);
+  add_image_size('ranking', 150, 100, true);
   add_filter('jpeg_quality', function($arg){return 100;});
 
   // Enable post formats
@@ -140,3 +141,10 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+
+function hotpost($posts_per_page) {
+	$query = new WP_Query( 'tag=hot' );
+	echo "(ooo)";
+	return 0;
+}
