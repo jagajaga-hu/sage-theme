@@ -5,6 +5,7 @@
 		echo "<header class=\"banner header-size\">";
 	}
 ?>
+<div class="site-icon">
 <a href="<?= home_url('/');?>" id="logo">
     <img src="<?php echo get_template_directory_uri(); ?>/icon.png" alt="" width="30" height="30">JagaJaga
 </a>
@@ -64,4 +65,5 @@
 </ul>
 <!-- ここまで、デバイス幅が768px以上なら、右上にメニュー表示 -->
 
+</div>
 </header>
