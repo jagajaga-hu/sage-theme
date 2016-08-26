@@ -73,14 +73,14 @@
     <!-- ここまでドロワーメニュー -->
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()."/style.php"; echo '?' . filemtime( get_stylesheet_directory() . '/style.php'); ?>" type="text/css" />
-    <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/tl-style.css" rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/style.css" rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri(); ?>/scripts/jsTileTemplate/tl-style.css" rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri(); ?>/scripts/jsTileTemplate/style.css" rel="stylesheet" />
     <!-- 横スクロールタブメニュー用のcssをここで最後に読み込む（優先されるように）-->
     <link href="<?php echo get_template_directory_uri(); ?>/scroll_tab_menu/style.css" rel="stylesheet"/>
     <!-- sage-theme直下のステイルシート（これが最優先されるから、これで上書きできる） -->
     
     <script src="<?php echo get_template_directory_uri(); ?>/assets/scripts/jquery.easing.1.3.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/jsTileTemplate/jstiles.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/jsTileTemplate/jstiles.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
 </head>

@@ -1,7 +1,9 @@
 <nav class="no-mobile nav-horizontal single-page-nav" id="global-nav">
-<div class="mask">
-<ul class="nav list">
-<li class="single-page-tab"><a href="<?= home_url('/'); ?>#tab0">ホーム</a></li>
+    <div class="mask">
+        <ul class="nav list">
+            <li class="single-page-tab">
+                <a href="<?= home_url('/'); ?>#tab0">ホーム</a>
+            </li>
 <?php
     $args = array(
         'hide_empty' => 1,
@@ -14,8 +16,8 @@
         }
     }
 ?>
-</ul>
-</div>
+        </ul>
+    </div>
 </nav>
 
 <div class="article-in-single-page">

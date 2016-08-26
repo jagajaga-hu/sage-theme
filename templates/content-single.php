@@ -6,7 +6,7 @@
         <?php if(get_query_var('page')==0):
         $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
         <div class="entry-eyecatch row">
-            <img class="col-xs-12" src="<?php echo $postthumb[0]; ?>" alt="">
+            <img class="col-xs-12" src="<?php echo $postthumb[0]; ?>">
         </div>
         <?php endif; ?>
 		<?php if(function_exists("wp_social_bookmarking_light_output_e")){wp_social_bookmarking_light_output_e();}?>

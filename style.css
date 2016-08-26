@@ -11,6 +11,26 @@ License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
 
+/** _variable.scss {{{ **/
+/** _variable.scss }}} **/
+
+/** _global.scss {{{ **/
+/** _global.scss }}} **/
+
+/** _header.scss {{{ **/
+/** _header.scss }}} **/
+
+/** _footer.scss {{{ **/
+/** _footer.scss }}} **/
+
+/** _posts.scss {{{ **/
+/** _posts.scss }}} **/
+
+/** _sidebar.scss {{{ **/
+/** _sidebar.scss }}} **/
+
+/**  page  {{{ **/
+
 div.nextpage {
 	width: 100%;
 	position: relative;
@@ -37,12 +57,12 @@ div.nextpage a {
 }
 
 
+/**  page }}}  **/
 
-/******************** style of body ********************/
+/******************** global ********************/
 body {
 	word-wrap: break-word;
 }
-/*******************************************************/
 @font-face {
     font-family: harenosora;
     src: url('assets/fonts/Harenosora.otf') format("opentype");
@@ -332,6 +352,9 @@ article footer nav ul a li {
     text-align: left;
     font-size: 0.8em;
 }
+
+/*** post }}} ***/
+
 /******************** style of index ********************/
 /******************** style of header ********************/
 @media (max-width: 767px) {
