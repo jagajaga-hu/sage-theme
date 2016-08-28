@@ -21,72 +21,32 @@
 </nav>
 
 <div class="tab-content">
-  <!-- ホームタブ{{{ -->
     <div class="tab-pane fade in active" id="tab0">
-        <div id="tiles-container">
-            <div class="tl-page" data-tl-template="tempD">
-                <?php $counter = 0; ?>
-                <?php if(have_posts()): while(have_posts()): the_post(); ?>
-                <div class="jstile row">
-                    <article <?php post_class('top_page'); ?>>
-                        <a href="<?php the_permalink(); ?>">
-                            <?php if(wp_is_mobile()):
-                                $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'homethumbnail_mobile');
-                            else:
-                                $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'homethumbnail');
-                            endif; ?>
-                            <?php if($counter>4 || $counter==1): ?>
-                                <div class="col-xs-3 col-sm-12 jstile-img">
-                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
-                                    <div class="home-date"><?php the_time('Y.m.d'); ?></div>
-                            <?php else: ?>
-                                <div class="col-xs-3 col-sm-5 jstile-img">
-                                    <img src="<?php echo $postthumb[0]; ?>" alt="">
-                                    <div class="home-date"><?php the_time('Y.m.d'); ?></div>
-                            <?php endif; ?>
-                            </div>
-                            <?php if($counter==0): ?>
-                                <div class="col-xs-9 col-sm-7 jstile-text top-article">
-                            <?php elseif($counter>4 || $counter==1): ?>
-                                <div class="col-xs-9 col-sm-12 jstile-text">
-                            <?php else: ?>
-                                <div class="col-xs-9 col-sm-7 jstile-text">
-                            <?php endif; ?>
-                                <h2><?php the_title(); ?></h2>
-                            <!-- ここから、記事本文抜粋（幅768px以上の時のみ） -->
-                            <?php if($counter==0 && strlen(get_the_content())>200): ?>
-                                <div class="no-mobile">
-                                    <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 200); ?>
-                                </div>
-                            <?php elseif($counter==1 && strlen(get_the_content())>150): ?>
-                                <div class="no-mobile">
-                                    <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 150); ?>
-                                </div>
-                            <?php elseif(strlen(get_the_content())>50): ?>
-                                <div class="no-mobile">
-                                    <?php echo mb_substr(strip_shortcodes(strip_tags(get_the_content())), 0, 50); ?>
-                                </div>
-                            <?php else: ?>
-                                <div class="no-mobile">
-                                    <?php the_excerpt(); ?>
-                                </div>
-                            <?php endif; ?>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            <?php $counter++; endwhile; endif; ?>
-            <?php for($i = 1; $i<=19-$counter; $i++): ?>
-                <div>
-                    <!--div class="dummy-image" style="background: url(http://jagajaga-hu.com/wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;" -->
-                    <div class="dummy-image" style="background: url(wp-content/uploads/2016/05/<?php echo $i; ?>-500x600.jpg); background-position: center center;">
-                    </div>
-                </div>
-            <?php endfor; ?>
+    <?php $args = array(
+		'posts_per_page' => 15,
+        'orderby' => 'date'
+    );
+    $category_posts = get_posts($args);
+    foreach($category_posts as $post): setup_postdata($post);
+    $postthumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium');
+    ?>
+        <div class="article-list">
+			<div class="article-list-left">
+					<img src="<?php echo $postthumb[0]; ?>" alt="">
+			</div>
+            <div class="article-list-right">
+                <span class="date"><?php the_time('Y.m.d'); ?></span>
+                <?php /*
+                <span class="tag tag_awarded">殿堂入り</span>
+                <span class="tag tag_hot">HOT</span>
+                */ ?>
+				<a href="<?php the_permalink(); ?>">
+					<h1><?php the_title(); ?></h1>
+				</a>
             </div>
-        </div>
+        </div> 
+    <?php endforeach; ?>
     </div>
-    <!-- ホームタブ}}} -->
     <?php foreach($categories as $category): ?>
     <div class="tab-pane fade" id="tab<?php echo $category->cat_ID; ?>">
     <?php $args = array(
